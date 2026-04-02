@@ -1,0 +1,645 @@
+{
+  "regex": {
+    "total_brands": 588,
+    "elapsed_seconds": 0.003,
+    "sample": [
+      {
+        "brand_name": "16Wurkz",
+        "exhibitors": [
+          {
+            "exhibitor_name": "16Wurkz introduces SubLuv and BassTit\u00e1n",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=26525874&uww_nohist=1",
+            "location": "EX9208"
+          }
+        ]
+      },
+      {
+        "brand_name": "64 Audio",
+        "exhibitors": [
+          {
+            "exhibitor_name": "64 Audio",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23880040&uww_nohist=1",
+            "location": "EG8106"
+          }
+        ]
+      },
+      {
+        "brand_name": "A2D2",
+        "exhibitors": [
+          {
+            "exhibitor_name": "MoFi Distribution",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044905&uww_nohist=1",
+            "location": "1- Schaumburg B, 334"
+          }
+        ]
+      },
+      {
+        "brand_name": "AB-Tech",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Altec Lansing",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=26367630&uww_nohist=1",
+            "location": "454"
+          },
+          {
+            "exhibitor_name": "Well Pleased AV",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044961&uww_nohist=1",
+            "location": "1430"
+          }
+        ]
+      },
+      {
+        "brand_name": "ADD-Powr\u00ae",
+        "exhibitors": [
+          {
+            "exhibitor_name": "ADD Powr",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044807&uww_nohist=1",
+            "location": "C101"
+          },
+          {
+            "exhibitor_name": "High Water Sound",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044877&uww_nohist=1",
+            "location": "596"
+          }
+        ]
+      },
+      {
+        "brand_name": "AER",
+        "exhibitors": [
+          {
+            "exhibitor_name": "VK Music",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044955&uww_nohist=1",
+            "location": "EX9215"
+          }
+        ]
+      },
+      {
+        "brand_name": "AGD Productions, Inc",
+        "exhibitors": [
+          {
+            "exhibitor_name": "AGD Productions, Inc",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044809&uww_nohist=1",
+            "location": "724"
+          }
+        ]
+      },
+      {
+        "brand_name": "AIM Electronics",
+        "exhibitors": [
+          {
+            "exhibitor_name": "AIM",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23931004&uww_nohist=1",
+            "location": "EX9104"
+          },
+          {
+            "exhibitor_name": "Source Systems Ltd.",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044938&uww_nohist=1",
+            "location": "1607"
+          }
+        ]
+      },
+      {
+        "brand_name": "ALPHASON",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Kirmuss Audio",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044889&uww_nohist=1",
+            "location": "EX9200"
+          }
+        ]
+      },
+      {
+        "brand_name": "AMG",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Next Level HiFi",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044911&uww_nohist=1",
+            "location": "2- Epiphany, 2- Serenity"
+          },
+          {
+            "exhibitor_name": "Sierra Sound",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23374989&uww_nohist=1",
+            "location": "530"
+          },
+          {
+            "exhibitor_name": "SV Audio",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=29157198&uww_nohist=1",
+            "location": "2- Serenity"
+          },
+          {
+            "exhibitor_name": "YG Acoustics",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23373307&uww_nohist=1",
+            "location": "2- Nirvana C, 418"
+          }
+        ]
+      },
+      {
+        "brand_name": "AMPED",
+        "exhibitors": [
+          {
+            "exhibitor_name": "AMPED",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044812&uww_nohist=1",
+            "location": "382"
+          }
+        ]
+      },
+      {
+        "brand_name": "ATC Loudspeakers",
+        "exhibitors": [
+          {
+            "exhibitor_name": "ATC Loudspeakers",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044819&uww_nohist=1",
+            "location": "1534"
+          },
+          {
+            "exhibitor_name": "Music Direct",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23089128&uww_nohist=1",
+            "location": "EX9218"
+          },
+          {
+            "exhibitor_name": "Saturday Audio Exchange",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044930&uww_nohist=1",
+            "location": "1- Innovation, 1- Inspiration, 394"
+          }
+        ]
+      },
+      {
+        "brand_name": "ATOHM Loudspeakers",
+        "exhibitors": [
+          {
+            "exhibitor_name": "ATOHM Loudspeakers",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23400520&uww_nohist=1",
+            "location": "664"
+          }
+        ]
+      },
+      {
+        "brand_name": "ATS Acoustics",
+        "exhibitors": [
+          {
+            "exhibitor_name": "ATS Acoustics",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=27298920&uww_nohist=1",
+            "location": "EX9232"
+          }
+        ]
+      },
+      {
+        "brand_name": "AVID HIFI",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Playback Distribution",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=25654084&uww_nohist=1",
+            "location": "2- Nirvana Lounge, 612, 634, 680, 684, 688, 694"
+          }
+        ]
+      },
+      {
+        "brand_name": "AVM Audio",
+        "exhibitors": [
+          {
+            "exhibitor_name": "AVM Audio Video Manufaktur",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23085530&uww_nohist=1",
+            "location": "460"
+          }
+        ]
+      },
+      {
+        "brand_name": "Aavik Acoustics",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Audio Group Denmark",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=25886561&uww_nohist=1",
+            "location": "2- Epiphany"
+          },
+          {
+            "exhibitor_name": "Next Level HiFi",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044911&uww_nohist=1",
+            "location": "2- Epiphany, 2- Serenity"
+          }
+        ]
+      },
+      {
+        "brand_name": "Accuphase",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Accuphase",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=26042202&uww_nohist=1",
+            "location": "1- Imagination"
+          },
+          {
+            "exhibitor_name": "Affordable Audio Zone, Presented by All Elite Audio",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=27669148&uww_nohist=1",
+            "location": "EX9132"
+          },
+          {
+            "exhibitor_name": "AXISS Audio",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044829&uww_nohist=1",
+            "location": "1- Imagination, 1129, 1130, 1628, 1632- Aster"
+          },
+          {
+            "exhibitor_name": "Master Artist Audio",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=26806800&uww_nohist=1",
+            "location": "1114, 1115"
+          },
+          {
+            "exhibitor_name": "Western Acoustics",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=28794301&uww_nohist=1",
+            "location": "488"
+          }
+        ]
+      },
+      {
+        "brand_name": "Accuton",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Madisound",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044898&uww_nohist=1",
+            "location": "348"
+          },
+          {
+            "exhibitor_name": "Master Artist Audio",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=26806800&uww_nohist=1",
+            "location": "1114, 1115"
+          }
+        ]
+      },
+      {
+        "brand_name": "Acora Acoustics",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Audio Research",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23112927&uww_nohist=1",
+            "location": "1- Knowledge, 534"
+          },
+          {
+            "exhibitor_name": "VAC/Valve Amplification Company",
+            "exhibitor_url": "https://axpona.com/exhibitors/?uww_exhid=23044951&uww_nohist=1",
+            "location": "2- Euphoria"
+          }
+        ]
+      }
+    ]
+  },
+  "haiku": {
+    "brands": [
+      {
+        "brand_name": "16Wurkz",
+        "exhibitors": [
+          {
+            "exhibitor_name": "16Wurkz",
+            "location": "EX9208"
+          }
+        ]
+      },
+      {
+        "brand_name": "64 Audio",
+        "exhibitors": [
+          {
+            "exhibitor_name": "64 Audio",
+            "location": "EG8106"
+          }
+        ]
+      },
+      {
+        "brand_name": "A2D2",
+        "exhibitors": [
+          {
+            "exhibitor_name": "MoFi Distribution",
+            "location": "1- Schaumburg B, 334"
+          }
+        ]
+      },
+      {
+        "brand_name": "AB-Tech",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Altec Lansing",
+            "location": "454"
+          },
+          {
+            "exhibitor_name": "Well Pleased AV",
+            "location": "1430"
+          }
+        ]
+      },
+      {
+        "brand_name": "ADD-Powr\u00ae",
+        "exhibitors": [
+          {
+            "exhibitor_name": "ADD Powr",
+            "location": "C101"
+          },
+          {
+            "exhibitor_name": "High Water Sound",
+            "location": "596"
+          }
+        ]
+      },
+      {
+        "brand_name": "AER",
+        "exhibitors": [
+          {
+            "exhibitor_name": "VK Music",
+            "location": "EX9215"
+          }
+        ]
+      },
+      {
+        "brand_name": "AGD Productions, Inc",
+        "exhibitors": [
+          {
+            "exhibitor_name": "AGD Productions, Inc",
+            "location": "724"
+          }
+        ]
+      },
+      {
+        "brand_name": "AIM Electronics",
+        "exhibitors": [
+          {
+            "exhibitor_name": "AIM",
+            "location": "EX9104"
+          },
+          {
+            "exhibitor_name": "Source Systems Ltd.",
+            "location": "1607"
+          }
+        ]
+      },
+      {
+        "brand_name": "ALPHASON",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Kirmuss Audio",
+            "location": "EX9200"
+          }
+        ]
+      },
+      {
+        "brand_name": "AMG",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Next Level HiFi",
+            "location": "2- Epiphany, 2- Serenity"
+          },
+          {
+            "exhibitor_name": "Sierra Sound",
+            "location": "530"
+          },
+          {
+            "exhibitor_name": "SV Audio",
+            "location": "2- Serenity"
+          },
+          {
+            "exhibitor_name": "YG Acoustics",
+            "location": "2- Nirvana C, 418"
+          }
+        ]
+      },
+      {
+        "brand_name": "AMPED",
+        "exhibitors": [
+          {
+            "exhibitor_name": "AMPED",
+            "location": "382"
+          }
+        ]
+      },
+      {
+        "brand_name": "ATC Loudspeakers",
+        "exhibitors": [
+          {
+            "exhibitor_name": "ATC Loudspeakers",
+            "location": "1534"
+          },
+          {
+            "exhibitor_name": "Music Direct",
+            "location": "EX9218"
+          },
+          {
+            "exhibitor_name": "Saturday Audio Exchange",
+            "location": "1- Innovation, 1- Inspiration, 394"
+          }
+        ]
+      },
+      {
+        "brand_name": "ATOHM Loudspeakers",
+        "exhibitors": [
+          {
+            "exhibitor_name": "ATOHM Loudspeakers",
+            "location": "664"
+          }
+        ]
+      },
+      {
+        "brand_name": "ATS Acoustics",
+        "exhibitors": [
+          {
+            "exhibitor_name": "ATS Acoustics",
+            "location": "EX9232"
+          }
+        ]
+      },
+      {
+        "brand_name": "AVID HIFI",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Playback Distribution",
+            "location": "2- Nirvana Lounge, 612, 634, 680, 684, 688, 694"
+          }
+        ]
+      },
+      {
+        "brand_name": "AVM Audio",
+        "exhibitors": [
+          {
+            "exhibitor_name": "AVM Audio Video Manufaktur",
+            "location": "460"
+          }
+        ]
+      },
+      {
+        "brand_name": "Aavik Acoustics",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Audio Group Denmark",
+            "location": "2- Epiphany"
+          },
+          {
+            "exhibitor_name": "Next Level HiFi",
+            "location": "2- Epiphany, 2- Serenity"
+          }
+        ]
+      },
+      {
+        "brand_name": "Accuphase",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Accuphase",
+            "location": "1- Imagination"
+          },
+          {
+            "exhibitor_name": "Affordable Audio Zone, Presented by All Elite Audio",
+            "location": "EX9132"
+          },
+          {
+            "exhibitor_name": "AXISS Audio",
+            "location": "1- Imagination, 1129, 1130, 1628, 1632- Aster"
+          },
+          {
+            "exhibitor_name": "Master Artist Audio",
+            "location": "1114, 1115"
+          },
+          {
+            "exhibitor_name": "Western Acoustics",
+            "location": "488"
+          }
+        ]
+      },
+      {
+        "brand_name": "Accuton",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Madisound",
+            "location": "348"
+          },
+          {
+            "exhibitor_name": "Master Artist Audio",
+            "location": "1114, 1115"
+          }
+        ]
+      },
+      {
+        "brand_name": "Acora Acoustics",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Audio Research",
+            "location": "1- Knowledge, 534"
+          },
+          {
+            "exhibitor_name": "VAC/Valve Amplification Company",
+            "location": "2- Euphoria"
+          }
+        ]
+      },
+      {
+        "brand_name": "Acoustic Energy",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Fidelity Imports",
+            "location": "1218, 1221, 1222, 1225, 1226, 1229, 1230, 1233, 1234, 1239, 2- Utopia D"
+          }
+        ]
+      },
+      {
+        "brand_name": "Acoustic Research",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Milwaukee Vintage",
+            "location": "EX9115"
+          }
+        ]
+      },
+      {
+        "brand_name": "Acoustic Signature",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Rutherford Audio",
+            "location": "1- Schaumburg C"
+          }
+        ]
+      },
+      {
+        "brand_name": "Acoustique Quality",
+        "exhibitors": [
+          {
+            "exhibitor_name": "AMPED",
+            "location": "382"
+          }
+        ]
+      },
+      {
+        "brand_name": "Acurus",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Aragon",
+            "location": "1533, 1621"
+          },
+          {
+            "exhibitor_name": "Indy Audio Labs",
+            "location": "1402, 1640, EX9309"
+          }
+        ]
+      },
+      {
+        "brand_name": "Acustica Applicata",
+        "exhibitors": [
+          {
+            "exhibitor_name": "High Water Sound",
+            "location": "596"
+          }
+        ]
+      },
+      {
+        "brand_name": "Advance Paris",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Affordable Audio Zone, Presented by All Elite Audio",
+            "location": "EX9132"
+          },
+          {
+            "exhibitor_name": "Playback Distribution",
+            "location": "2- Nirvana Lounge, 612, 634, 680, 684, 688, 694"
+          }
+        ]
+      },
+      {
+        "brand_name": "Aequo Audio Loudspeakers",
+        "exhibitors": [
+          {
+            "exhibitor_name": "2WA Group",
+            "location": "480, 484"
+          },
+          {
+            "exhibitor_name": "Turnbull Audio",
+            "location": "739"
+          }
+        ]
+      },
+      {
+        "brand_name": "Aesthetix",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Aesthetix Audio Corp",
+            "location": "530"
+          },
+          {
+            "exhibitor_name": "Computer Audio Design (CAD)",
+            "location": "364"
+          }
+        ]
+      },
+      {
+        "brand_name": "Aidas Cartridge",
+        "exhibitors": [
+          {
+            "exhibitor_name": "Aidas Cartridges",
+            "location": "2- Nirvana A"
+          }
+        ]
+      }
+    ],
+    "usage": {
+      "input_tokens": 3728,
+      "output_tokens": 2582,
+      "total_tokens": 6310
+    },
+    "cost": {
+      "test_cost_usd": 0.01331,
+      "estimated_total_cost_usd": 0.2532,
+      "scale_factor": 19.0
+    },
+    "elapsed_seconds": 14.01,
+    "model": "claude-haiku-4-5-20251001"
+  }
+}

@@ -1,0 +1,65 @@
+# Marts Layer Manifest — AXPONA Mirror
+# Analytical outputs and synthesis (gold). Domain-organized bounded context outputs.
+# DDD analog: Read models — published interface for consumption.
+#
+# Related: data-architecture-spec.md Section 2 (Dimensional Models)
+# Related: schemas/axpona-schema.sql
+
+layer: marts
+description: >
+  Analytical outputs organized by bounded context. Contains synthesis
+  products derived from staging and intermediate layers. Each output
+  represents a domain-specific read model — the "published interface"
+  that consulting deliverables consume.
+
+status: active
+
+# Synthesis rules
+synthesis:
+  business_model:
+    output: business-model-synthesis.yaml
+    description: >
+      Structured business model analysis: revenue streams (space_sales,
+      services, sign_up, sponsorship, subscription), system mix weights,
+      investment thesis, and priority metrics. Derived from classification
+      inputs and signal validation.
+    sources:
+      - ../staging/structured-extraction.json
+      - ../staging/enriched-extraction.json
+    schema_ref: ../../classification.md
+
+# Planned mart outputs (from data-architecture-spec.md Section 2)
+planned:
+  exhibitor:
+    description: "fct_exhibitor_edition, dim_exhibitor — marketplace supply side"
+    grain: one row per exhibitor per edition
+    schema_ref: ../schemas/axpona-schema.sql
+
+  sponsorship:
+    description: "fct_sponsorship_delivery, dim_sponsor — advertising/media lens"
+    grain: one row per deliverable per edition
+    schema_ref: ../schemas/axpona-schema.sql
+
+  attendee:
+    description: "fct_registration, dim_attendee — marketplace demand side"
+    grain: one row per registration per edition
+    schema_ref: ../schemas/axpona-schema.sql
+
+  event:
+    description: "fct_edition_pnl, dim_edition — project lens"
+    grain: one row per edition
+    schema_ref: ../schemas/axpona-schema.sql
+
+  exhibition_space:
+    description: "fct_space_assignment, dim_space — space utilization"
+    grain: one row per space per edition
+    schema_ref: ../schemas/axpona-schema.sql
+
+  interaction:
+    description: "fct_lead_capture — lead retrieval and matchmaking"
+    grain: one row per lead per edition
+    schema_ref: ../schemas/axpona-schema.sql
+
+# Contents inventory
+contents:
+  - business-model-synthesis.yaml   # Business model analysis + investment thesis

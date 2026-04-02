@@ -1,0 +1,62 @@
+# Intermediate Layer Manifest — AXPONA Mirror
+# Cross-source joins and entity resolution (silver-to-gold transition).
+# DDD analog: Domain services — logic that spans multiple aggregates.
+#
+# Related: data-architecture-spec.md Sections 1, 3, 4
+
+layer: intermediate
+description: >
+  Cross-source joins, entity resolution, and deduplication. This layer
+  reconciles entities extracted from different sources (e.g., an exhibitor
+  mentioned on the pricing page, in the directory, and in forum threads)
+  into unified domain entities with lineage.
+
+status: planned
+
+# Planned join specifications
+join_specs:
+  exhibitor_lifecycle:
+    description: >
+      Join exhibitor data across directory, space assignments, and forum
+      mentions. Resolve entity identity across sources. Output: unified
+      exhibitor entity with space type, pricing tier, and community sentiment.
+    sources:
+      - ../staging/structured-extraction.json    # space assignments
+      - ../staging/enriched-extraction.json      # enriched entities
+      - ../staging/sentiment-extraction.json     # forum mentions
+    output: exhibitor-lifecycle.json
+    grain: one row per exhibitor
+
+  sponsorship_assembly:
+    description: >
+      Join sponsorship inventory with sold status and any community
+      mentions of sponsors. Track package composition and sell-through.
+    sources:
+      - ../staging/structured-extraction.json    # inventory + sold flags
+      - ../staging/sentiment-extraction.json     # sponsor mentions in forums
+    output: sponsorship-assembly.json
+    grain: one row per sponsorship item
+
+  attendee_funnel:
+    description: >
+      Join ticket types, pricing, and demographics with community
+      sentiment about the attendee experience.
+    sources:
+      - ../staging/structured-extraction.json    # ticket types + pricing
+      - ../staging/enriched-extraction.json      # demographics
+      - ../staging/sentiment-extraction.json     # attendee experience sentiment
+    output: attendee-funnel.json
+    grain: one row per ticket type per edition
+
+  cross_context:
+    description: >
+      Cross-domain joins: exhibitor × attendee × space. Maps the
+      two-sided marketplace dynamics visible from outside-in signals.
+    sources:
+      - exhibitor-lifecycle.json
+      - attendee-funnel.json
+    output: cross-context-summary.json
+    grain: edition-level summary
+
+# Contents inventory (planned)
+contents: []

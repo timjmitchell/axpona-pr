@@ -1,0 +1,298 @@
+{
+  "company": "AXPONA (JD Events LLC)",
+  "collection": "ephemeral_axpona",
+  "website": "https://axpona.com",
+  "updated": "2026-03-16T00:00:00",
+  "sources": [
+    {
+      "url": "https://axpona.com",
+      "title": "AXPONA Homepage",
+      "source_type": "web",
+      "signal_source": "marketing",
+      "tags": ["homepage", "positioning", "brand-voice"],
+      "reliability": 0.5,
+      "notes": "Marketing copy — 'Your Music. Your Way.' positioning, scale claims, feature highlights"
+    },
+    {
+      "url": "https://axpona.com/about/",
+      "title": "AXPONA About Page",
+      "source_type": "web",
+      "signal_source": "marketing",
+      "tags": ["about", "history", "mission"],
+      "reliability": 0.5
+    },
+    {
+      "url": "https://axpona.com/exhibit/",
+      "title": "AXPONA Exhibit Page — Exhibitor Information",
+      "source_type": "web",
+      "signal_source": "pricing_page",
+      "tags": ["exhibitor", "pricing", "space-types", "floor-plan"],
+      "reliability": 0.9,
+      "notes": "5 space types, pricing, sales contacts, exhibition contract download",
+      "extract_type": "exhibitor-spaces"
+    },
+    {
+      "url": "https://axpona.com/sponsorships/",
+      "title": "AXPONA Sponsorship Opportunities",
+      "source_type": "web",
+      "signal_source": "pricing_page",
+      "tags": ["sponsorship", "pricing", "inventory", "sold-status"],
+      "reliability": 0.9,
+      "notes": "40+ items across 6 categories, $500-$12K, SOLD signals",
+      "extract_type": "sponsorship-inventory"
+    },
+    {
+      "url": "https://axpona.com/attend/",
+      "title": "AXPONA Attend Page — Ticket Information",
+      "source_type": "web",
+      "signal_source": "pricing_page",
+      "tags": ["attendee", "tickets", "pricing", "ticket-types"],
+      "reliability": 0.9,
+      "notes": "6 ticket types, $15-$150, regular vs onsite pricing",
+      "extract_type": "ticket-pricing"
+    },
+    {
+      "url": "https://axpona.com/attend/listening-rooms/",
+      "title": "AXPONA Listening Rooms",
+      "source_type": "web",
+      "signal_source": "marketing",
+      "tags": ["listening-rooms", "exhibitor-list", "product-experience"],
+      "reliability": 0.7
+    },
+    {
+      "url": "https://axpona.com/attend/expo-hall/",
+      "title": "AXPONA Expo Hall",
+      "source_type": "web",
+      "signal_source": "marketing",
+      "tags": ["expo-hall", "exhibitor-list"],
+      "reliability": 0.7
+    },
+    {
+      "url": "https://axpona.com/attend/ear-gear-experience/",
+      "title": "AXPONA Ear Gear Experience",
+      "source_type": "web",
+      "signal_source": "marketing",
+      "tags": ["ear-gear", "headphones", "personal-audio"],
+      "reliability": 0.7
+    },
+    {
+      "url": "https://axpona.com/attend/seminars/",
+      "title": "AXPONA Seminars & Programming",
+      "source_type": "web",
+      "signal_source": "marketing",
+      "tags": ["seminars", "programming", "sessions", "speakers"],
+      "reliability": 0.7
+    },
+    {
+      "url": "https://axpona.com/attend/car-audio-showcase/",
+      "title": "AXPONA Car Audio Showcase",
+      "source_type": "web",
+      "signal_source": "marketing",
+      "tags": ["car-audio", "iasca", "new-2025"],
+      "reliability": 0.7,
+      "notes": "New in 2025 — partnership with IASCA"
+    },
+    {
+      "url": "https://axpona.com/alti-pavilion/",
+      "title": "AXPONA ALTI Pavilion",
+      "source_type": "web",
+      "signal_source": "marketing",
+      "tags": ["alti", "b2b", "startups", "new-2026"],
+      "reliability": 0.7,
+      "notes": "New in 2026 — B2B focused, loudspeaker/audio tech manufacturers"
+    },
+    {
+      "url": "https://axpona.com/exhibitors-by-brand/",
+      "title": "AXPONA Exhibitors by Brand",
+      "source_type": "web",
+      "signal_source": "marketing",
+      "tags": ["exhibitor-directory", "brands", "product-listings", "js-rendered"],
+      "reliability": 0.8,
+      "notes": "Full exhibitor directory — brand names, categories",
+      "extract_type": "exhibitor-directory"
+    },
+    {
+      "url": "https://axpona.com/speakers/",
+      "title": "AXPONA Speakers",
+      "source_type": "web",
+      "signal_source": "marketing",
+      "tags": ["speakers", "programming", "expertise"],
+      "reliability": 0.8
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2025/05/06/3074977/0/en/AXPONA-2025-Shatters-Records.html",
+      "title": "AXPONA 2025 Shatters Records — Press Release",
+      "source_type": "web",
+      "signal_source": "financial_filings",
+      "tags": ["press-release", "2025-actuals", "attendance", "growth"],
+      "reliability": 0.85,
+      "notes": "10,910 attendees, 700+ brands, 20% Trade Pass surge"
+    },
+    {
+      "url": "https://www.head-fi.org/threads/axpona-2025-eargear-impressions-thread.976566/",
+      "title": "Head-Fi AXPONA 2025 EarGear Impressions",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "attendee-sentiment", "head-fi", "headphones", "impressions"],
+      "reliability": 0.6,
+      "notes": "Headphone/personal audio impressions — gear rankings, booth reports",
+      "max_pages": 10,
+      "forum_platform": "xenforo"
+    },
+    {
+      "url": "https://www.head-fi.org/threads/axpona-and-eargear-2025-april-11-13-schaumburg-illinois.976367/",
+      "title": "Head-Fi AXPONA 2025 Planning Thread",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "head-fi", "planning", "expectations"],
+      "reliability": 0.5,
+      "notes": "Pre-show planning, exhibitor expectations — lower sentiment value but useful for expectation vs reality",
+      "max_pages": 5,
+      "forum_platform": "xenforo"
+    },
+    {
+      "url": "https://www.audiosciencereview.com/forum/index.php?threads/axpona-2025.62020/",
+      "title": "AudioScienceReview AXPONA 2025 Thread",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "measurements", "asr", "impressions"],
+      "reliability": 0.6,
+      "notes": "Measurement-focused community — strong opinions, skeptical of high-end pricing. 5+ pages.",
+      "max_pages": 10,
+      "forum_platform": "xenforo"
+    },
+    {
+      "url": "https://forums.stevehoffman.tv/threads/axpona-2025.1222046/",
+      "title": "Steve Hoffman Forums — AXPONA 2025",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "attendee-sentiment", "stevehoffman", "music-first", "impressions"],
+      "reliability": 0.6,
+      "notes": "14+ pages. Music-first community (vinyl/mastering focus). Deepest AXPONA discussion found.",
+      "max_pages": 20,
+      "forum_platform": "xenforo"
+    },
+    {
+      "url": "https://forums.stevehoffman.tv/threads/axpona-room-agenda-and-report.1199508/",
+      "title": "Steve Hoffman Forums — AXPONA Room Agenda and Report",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "stevehoffman", "room-rankings", "detailed-report"],
+      "reliability": 0.6,
+      "notes": "16+ pages. Room-by-room agenda and reports — speaker-focused. Best source for room ranking sentiment.",
+      "max_pages": 20,
+      "forum_platform": "xenforo"
+    },
+    {
+      "url": "https://forums.stevehoffman.tv/threads/favorite-axpona-rooms.1199598/",
+      "title": "Steve Hoffman Forums — Favorite AXPONA Rooms",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "stevehoffman", "room-rankings", "best-of"],
+      "reliability": 0.6,
+      "notes": "Best-of room rankings — direct sentiment signal for exhibitor room quality.",
+      "max_pages": 10,
+      "forum_platform": "xenforo"
+    },
+    {
+      "url": "https://www.diyaudio.com/community/threads/my-experience-at-a-hifi-audio-convention-axpona-2025.426344/",
+      "title": "diyAudio — My Experience at AXPONA 2025",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "diyaudio", "diy", "value-oriented", "impressions"],
+      "reliability": 0.6,
+      "notes": "14+ pages. DIY/engineering-minded community — value perspective, DSP vs passive debates. Unique angle.",
+      "max_pages": 20,
+      "forum_platform": "xenforo"
+    },
+    {
+      "url": "https://www.whatsbestforum.com/threads/thoughts-and-reflections-on-axpona-2025.40730/",
+      "title": "What's Best Forum — Thoughts and Reflections on AXPONA 2025",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "wbf", "ultra-high-end", "critical-analysis", "impressions"],
+      "reliability": 0.6,
+      "notes": "Ultra-high-end community. Post-show critical reflections — cost-no-object perspective.",
+      "max_pages": 10,
+      "forum_platform": "xenforo"
+    },
+    {
+      "url": "https://www.whatsbestforum.com/threads/axpona-2025-report.41089/",
+      "title": "What's Best Forum — AXPONA 2025 Report",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "wbf", "show-report", "impressions"],
+      "reliability": 0.6,
+      "notes": "Detailed show report from high-end community.",
+      "max_pages": 10,
+      "forum_platform": "xenforo"
+    },
+    {
+      "url": "https://forum.audiogon.com/discussions/your-favorite-room-at-axpona-2025",
+      "title": "Audiogon — Your Favorite Room at AXPONA 2025",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "audiogon", "room-rankings", "best-of"],
+      "reliability": 0.55,
+      "notes": "Buyer/collector community. Direct room ranking sentiment. May require login for full content.",
+      "max_pages": 5,
+      "forum_platform": "other",
+      "crawl_tier": "direct",
+      "rate_delay": 3,
+      "discovery_method": "manual"
+    },
+    {
+      "url": "https://forum.audiogon.com/discussions/tariff-panic-at-axpona-25",
+      "title": "Audiogon — Tariff Panic at AXPONA 25?",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "audiogon", "pricing-sentiment", "tariffs", "industry"],
+      "reliability": 0.55,
+      "notes": "Unique angle — tariff/pricing impact on exhibitor and attendee sentiment. Not found elsewhere.",
+      "max_pages": 5,
+      "forum_platform": "other",
+      "crawl_tier": "direct",
+      "rate_delay": 3,
+      "discovery_method": "manual"
+    },
+    {
+      "url": "https://www.audioshark.org/threads/axpona-2025-report.26607/",
+      "title": "AudioShark — AXPONA 2025 Report",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "audioshark", "impressions", "logistics-complaints"],
+      "reliability": 0.55,
+      "notes": "Smaller community but candid about overcrowding and logistics pain points.",
+      "max_pages": 10,
+      "forum_platform": "xenforo"
+    },
+    {
+      "url": "https://audiophilestyle.com/forums/topic/70920-axpona-2025-is-here/",
+      "title": "Audiophile Style — AXPONA 2025 Forum Thread",
+      "source_type": "web",
+      "signal_source": "customer_voice",
+      "tags": ["forum", "audiophile", "audiophile-style", "impressions"],
+      "reliability": 0.6,
+      "notes": "Mixed editorial + forum format. Invision-based (different pagination).",
+      "max_pages": 10,
+      "forum_platform": "invision"
+    },
+    {
+      "url": "https://www.stereophile.com/content/axpona-2025-show-report",
+      "title": "Stereophile AXPONA 2025 Show Report",
+      "source_type": "web",
+      "signal_source": "industry_research",
+      "tags": ["industry-press", "show-report", "product-coverage"],
+      "reliability": 0.8,
+      "notes": "Major audio publication show coverage"
+    },
+    {
+      "url": "https://www.theabsolutesound.com/articles/axpona-2025/",
+      "title": "The Absolute Sound AXPONA 2025 Coverage",
+      "source_type": "web",
+      "signal_source": "industry_research",
+      "tags": ["industry-press", "show-report", "product-coverage"],
+      "reliability": 0.8
+    }
+  ]
+}

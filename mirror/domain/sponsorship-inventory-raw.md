@@ -1,0 +1,408 @@
+[Skip to main content](https://axpona.com/sponsorships/#tm-main)
+[ ![Axpona](https://axpona.com/wp-content/uploads/yootheme/cache/4c/Axpona-Logo-Black-notag-4c3c617f.png)![Axpona](https://axpona.com/wp-content/uploads/yootheme/cache/3d/Axpona-Logo-White-3dc0839d.png)](https://axpona.com/)
+[ Menu ](https://axpona.com/sponsorships/#tm-dialog-mobile)
+  * [Exhibitors ](https://axpona.com/sponsorships/)
+    * [Exhibitors by Alpha](https://axpona.com/exhibitors/)
+    * [Exhibitors by Location](https://axpona.com/exhibitors-location/)
+    * [Manufacturer Brands](https://axpona.com/exhibitors-by-brand/)
+    * [Sponsors](https://axpona.com/sponsors/)
+    * [To Exhibit/Sponsor](https://axpona.com/exhibit/)
+    * [For Current Exhibitors](https://reg.unityeventsolutions.com/se/AXPONA2026/EXKIT/en-CA/welcome/process.aspx?ut_SGU=3860278E-F1E2-436D-834C-8F68E1D424CA&ut_CPG=0FC855E4-BD31-4445-A400-E0B6C3886C41&ut_CST=E78BC3AD-82C9-49B1-98C8-2274F06AC7CB&_gl=1*1yzdar9*_gcl_au*MTQ2NjUyOTc1My4xNzU0NTAxNjcw*_ga*MTE2MjU5MDI4MC4xNjkyMDQwMTA1*_ga_L2NFWCLNY6*czE3NjIxODMxOTEkbzg3MyRnMSR0MTc2MjE4NTI3NSRqNjAkbDAkaDA.)
+    * [Car Audio Showcase](https://axpona.com/car-audio-showcase-whyattend/)
+    * [ALTI Pavilion](https://axpona.com/alti-pavilion/)
+  * [Attend ](https://axpona.com/sponsorships/)
+    * [Tickets](https://axpona.com/register/)
+    * [Schedule/Education](https://axpona.com/schedule/)
+    * [Speakers](https://axpona.com/speakers/)
+    * [Concerts](https://axpona.com/concerts/)
+    * [Car Audio Showcase](https://axpona.com/car-audio-showcase-whyattend/)
+    * [Hotel & Travel](https://axpona.com/hotel-travel/)
+    * [FAQ](https://axpona.com/faq/)
+  * [Audio Insider Podcast](https://axpona.com/audio-insider-podcast/)
+  * [News ](https://axpona.com/sponsorships/)
+    * [Press Information](https://axpona.com/press/)
+  * [About ](https://axpona.com/sponsorships/)
+    * [Contact](https://axpona.com/contact-us/)
+    * [About AXPONA](https://axpona.com/about/)
+    * [SCAM Warning](https://axpona.com/scams/)
+    * [Advisory Board](https://axpona.com/advisory-board/)
+    * [Event Staff](https://axpona.com/contact-us/)
+
+
+[Buy Tickets](https://axpona.com/register/)
+  * [](https://www.linkedin.com/company/axpona-audio-expo-north-america/)
+  * [](https://www.facebook.com/axpona)
+  * [](https://www.youtube.com/axpona)
+  * [](https://www.instagram.com/axpona/)
+
+
+#### APRIL 10 – 12, 2026  
+Schaumburg Convention Center | Chicago, IL
+[Buy Tickets](https://axpona.com/register/)
+[BECOME AN EXHIBITOR](https://axpona.com/exhibit/)
+  * [](https://www.facebook.com/axpona)
+  * [](https://www.youtube.com/axpona)
+  * [](https://www.instagram.com/axpona/)
+  * [](https://www.linkedin.com/company/axpona-audio-expo-north-america)
+
+
+[ ![Axpona](https://axpona.com/wp-content/uploads/yootheme/cache/4c/Axpona-Logo-Black-notag-4c3c617f.png)![Axpona](https://axpona.com/wp-content/uploads/yootheme/cache/3d/Axpona-Logo-White-3dc0839d.png)](https://axpona.com/)
+  * Exhibitors 
+    * [Exhibitors by Alpha](https://axpona.com/exhibitors/)
+    * [Exhibitors by Location](https://axpona.com/exhibitors-location/)
+    * [Manufacturer Brands](https://axpona.com/exhibitors-by-brand/)
+    * [Sponsors](https://axpona.com/sponsors/)
+    * [To Exhibit/Sponsor](https://axpona.com/exhibit/)
+    * [For Current Exhibitors](https://reg.unityeventsolutions.com/se/AXPONA2026/EXKIT/en-CA/welcome/process.aspx?ut_SGU=3860278E-F1E2-436D-834C-8F68E1D424CA&ut_CPG=0FC855E4-BD31-4445-A400-E0B6C3886C41&ut_CST=E78BC3AD-82C9-49B1-98C8-2274F06AC7CB&_gl=1*1yzdar9*_gcl_au*MTQ2NjUyOTc1My4xNzU0NTAxNjcw*_ga*MTE2MjU5MDI4MC4xNjkyMDQwMTA1*_ga_L2NFWCLNY6*czE3NjIxODMxOTEkbzg3MyRnMSR0MTc2MjE4NTI3NSRqNjAkbDAkaDA.)
+    * [Car Audio Showcase](https://axpona.com/car-audio-showcase-whyattend/)
+    * [ALTI Pavilion](https://axpona.com/alti-pavilion/)
+  * Attend 
+    * [Tickets](https://axpona.com/register/)
+    * [Schedule/Education](https://axpona.com/schedule/)
+    * [Speakers](https://axpona.com/speakers/)
+    * [Concerts](https://axpona.com/concerts/)
+    * [Car Audio Showcase](https://axpona.com/car-audio-showcase-whyattend/)
+    * [Hotel & Travel](https://axpona.com/hotel-travel/)
+    * [FAQ](https://axpona.com/faq/)
+  * [Audio Insider Podcast](https://axpona.com/audio-insider-podcast/)
+  * News 
+    * [Press Information](https://axpona.com/press/)
+  * About 
+    * [Contact](https://axpona.com/contact-us/)
+    * [About AXPONA](https://axpona.com/about/)
+    * [SCAM Warning](https://axpona.com/scams/)
+    * [Advisory Board](https://axpona.com/advisory-board/)
+    * [Event Staff](https://axpona.com/contact-us/)
+
+
+![](https://axpona.com/wp-content/uploads/yootheme/cache/f3/Axpona_2025_Day2_-3459-scaled-f3614a34.jpg)
+#  Sponsorship Opportunities 
+## For Questions & Custom Proposals Contact:
+### Mark Freed | mark@jdevents.com | (203) 307-2688
+### Ryan Pearson | ryan@jdevents.com | (203) 307-2727
+# Signs & Graphics
+[Directional Sign Sponsor (10 Signs) – $2,000 – SOLD ](https://axpona.com/sponsorships/)
+Every attendee and exhibitor needs to check in at registration and make their way upstairs. Branding everywhere! Have your logo included on 10 directional signs placed in high-traffic areas around AXPONA.
+![](https://axpona.com/wp-content/uploads/Directional-Sign-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Directional-Sign-2-768x768-1-300x300.png)
+[Welcome to AXPONA Signs – $1,500 – SOLD ](https://axpona.com/sponsorships/)
+Welcome all attendees to AXPONA! Have your company logo prominently placed on the welcome signage at the two key entrance areas to the building; the Hotel Entrance (AXPONA Registration Area) and the Convention Center Parking Lot Entrance.
+**Specs:** Logo or custom artwork on two 22″ wide x 28″ high signs.
+![](https://axpona.com/wp-content/uploads/Welcome-to-AXPONA-2-768x768-1-300x300.png)
+[The BIG Registration Sponsorship – $11,000 – SOLD ](https://axpona.com/sponsorships/)
+This is the BIGGEST first impression you can make at AXPONA! Two giant banners with your artwork hanging over the registration area and table cloths with your logo will get everyone’s attention.
+**Specs:**  
+Custom artwork on two 19′ wide x 4.5′ high hanging banners.  
+Logo on 2 table cloths placed on 2 registration tables.  
+Opportunity to provide one approved promotional item to be distributed at registration.  
+Logo promoted as a sponsor on the AXPONA website, mobile-app and event guide.
+![](https://axpona.com/wp-content/uploads/Registration-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Registration-2-768x768-1-300x300.png)
+[Show Floor Graphics – Expo Hall, Car Audio Showcase & Ear Gear Experience – $2,000 ](https://axpona.com/sponsorships/)
+STAND OUT! Be the company to direct attendees right to your booth in the EXPO Hall, Ear Gear Experience, or Car Audio Showcase. AXPONA will place 4 floor stickers with your custom artwork leading to your booth from the entrance of the hall.
+**Specs:** 4 Stickers, 24” wide x 24” high. Sponsor provides artwork. AXPONA places the stickers.
+![](https://axpona.com/wp-content/uploads/Show-Floor-Graphics-768x768-1-300x300.png)
+[Pop-Up Banner – $995 ](https://axpona.com/sponsorships/)
+Get additional visibility with your eye-level pop up banner placed in a high traffic/central area.
+**Specs:** Sponsor produces and brings to AXPONA a standard pop-up banner that AXPONA will place. A standard pop-up banner is approximately 31” wide x 78” high. AXPONA has final say on location of pop-up banner.
+![](https://axpona.com/wp-content/uploads/Pop-Up-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Pop-Up-2-768x768-1-300x300.png)
+[Column Wrap – Convention Center – $2,750 ](https://axpona.com/sponsorships/)
+Wrap a column with your custom artwork in the walkway to The EXPO Hall. 
+**Specs:** 3′ wide x 8′ high. Sponsor provides artwork. AXPONA places the column wrap.
+![](https://axpona.com/wp-content/uploads/Column-Wrap-Convention-768x768-1-300x300.png)
+[Column Wrap – Hotel – $2,750 ](https://axpona.com/sponsorships/)
+Wrap a column with your custom artwork in the walkway between the Convention Center and Hotel.
+Specs: 3′ wide x 8′ high. Sponsor provides artwork. AXPONA places the column wrap.
+![](https://axpona.com/wp-content/uploads/Column-Wrap-Hotel-768x768-1-300x300.png)
+[Floor Sponsor – $2,500 – SOLD ](https://axpona.com/sponsorships/)
+Be the lead sponsor of the hotel floor.
+Your company logo appears on the Event Guide map page and on the directory signage for your floor.
+Amplify the branding by adding signage in the elevator landing area.
+Have your signage and promotional items placed in a designated area in the elevator vestibule.
+**Specs:** Up to three pop-up banners (no larger than 31”w x 78” h) or one large pop-up (no larger than 10’w x 8’h). _Sponsor must confirm signage plan with Show Management prior to the show. AXPONA will place signage._
+_The landing area is the immediate area where elevators are located and excludes hallways. Signs must not block doors or foot traffic per fire department and show management._
+![](https://axpona.com/wp-content/uploads/Elevator-Landing-Area-768x768-2-300x300.png)
+[Hanging Escalator Sign – $3,500 – SOLD ](https://axpona.com/sponsorships/)
+STANDOUT! Visibility is critical to every brand. Take advantage of this unique opportunity to get your brand in front of dedicated eyes on the down escalator between 2nd floor and lobby.
+**Specs:**  
+Two Hanging Portions: 48″ wide x 38″ high each  
+Top: 48” wide x 30” high
+This graphic hangs over the beam. There are two sides and a top.
+![](https://axpona.com/wp-content/uploads/Hanging-Escalator-to-Lobby-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Hanging-Escalator-to-Lobby-2-768x768-1-300x300.png)
+[Hanging Crosswalk Sign – 1st Floor Walkway to Lobby – $7,500 – SOLD ](https://axpona.com/sponsorships/)
+STANDOUT! Think the “highest” traffic area in the show meets Time Square in NYC. You want to be seen this is the place to make your statement.
+Specs: 1 sign. 6’ wide x 4’ high
+![](https://axpona.com/wp-content/uploads/Hanging-Crosswalk-Hotel-768x768-1-300x300.png)
+[Hanging Banner – Convention Center – To Expo Hall – $2,750 ](https://axpona.com/sponsorships/)
+This high traffic area leads the way to and from The EXPO Hall – the most visited room at AXPONA.
+**Specs:** 1 banner, double sided, 14’ wide x 2’ high
+![](https://axpona.com/wp-content/uploads/Hanging-Banner-Convention-768x768-1-300x300.png)
+[Hanging Banner – Convention Center – 2nd Floor to Utopia Rooms – $2,250 ](https://axpona.com/sponsorships/)
+This area leads the way to and from the Utopia listening rooms.
+**Specs:** 1 banner, double sided, 14’ wide x 2’ high
+![](https://axpona.com/wp-content/uploads/Hanging-Second-to-Utopia-768x768-2-300x300.png)
+[Hanging Banner – Staircase – $4,000 – SOLD ](https://axpona.com/sponsorships/)
+STANDOUT! Eyeballs and awareness are critical to every brand. Take advantage of this unique opportunity to get your brand in front of dedicated eyeballs on the convention center grand staircase.
+**Specs:** 1 banner, 9’ wide x 6’ high
+![](https://axpona.com/wp-content/uploads/Hanging-Banner-Staircase-768x768-1-300x300.png)
+[Grand Staircase Wrap – $12,000 -SOLD ](https://axpona.com/sponsorships/)
+**SOLD!** Exclusive sponsor of the grand stairway leading to the 2nd floor of the convention center. 
+**Specs:** AXPONA will supply exact dimensions. Sponsor provides custom artwork. AXPONA produces and places clings.  
+Logo promoted as a sponsor on AXPONA website, mobile-app & event guide
+![](https://axpona.com/wp-content/uploads/Grand-Staircase-Wrap-768x768-1-300x300.png)
+[Door Wrap – $950 ](https://axpona.com/sponsorships/)
+Wrap your listening room door with your custom artwork!
+![](https://axpona.com/wp-content/uploads/Door-Wrap-768x768-1-300x300.png)
+[Elevator Wraps – $1,850-$11,000 ](https://axpona.com/sponsorships/)
+**Floors 3-16  
+Sold:** All 6th Floor, three on 3rd Floor, two on 4th Floor, one on 16th Floor  
+$1,850 per elevator or $6,500 for all 5.
+**Floor 2 – SOLD**  
+$11,000 for 2nd floor elevators. Includes 5 elevators.
+**Floor 1 – SOLD**  
+$11,000 for 1st floor elevators. Includes 5 elevators.
+Going up? Going down? The majority of AXPONA attendees are in the elevator lobby waiting to change floors. Get your message seen. Put your art work and exhibit location on the exterior doors of the elevators for everyone to see!
+**Specs:** Viewable Graphic Area: 41” W x 83.5” H
+![](https://axpona.com/wp-content/uploads/Elevator-Wrap-2-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Elevator-Wrap-768x768-1-300x300.png)
+[Express Elevator Sponsor – $1,500 – SOLD ](https://axpona.com/sponsorships/)
+The Express Elevator Sponsorship
+The express elevator brings attendees to the top floors of the hotel. (1 Elevator) Your logo/custom artwork will be placed on (1) 22×28 above the elevator (1) Signs inside elevator promoting your location. 
+![](https://axpona.com/wp-content/uploads/Express-Elevator-768x768-2-300x300.png)![](https://axpona.com/wp-content/uploads/Express-Elevator-2-768x768-2-300x300.png)
+* * *
+# Glass Clings
+[Main Entrance Glass Clings – $6,000 – SOLD ](https://axpona.com/sponsorships/)
+The logos attendees see! Window clings on the AXPONA Main Entrance doors.
+**Specs:** Six double-sided window clings. Sponsor provides the artwork. AXPONA produces and places.  
+Each window cling is 30” wide x 20” high.  
+Logo promoted as a sponsor on AXPONA website, mobile-app & event guide.
+![](https://axpona.com/wp-content/uploads/Glass-Clings-Main-Entrance-768x768-1-300x300.png)
+[Central Doors Glass Clings – to Expo Hall – $8,500 – SOLD ](https://axpona.com/sponsorships/)
+The central doors on the left side of AXPONA registration that lead to the EXPO Hall.
+**Specs:** Six double sided window clings. Sponsor provides the artwork. AXPONA produces and places.  
+Each window cling is 30” wide x 20” high.  
+Logo promoted as a sponsor on AXPONA website, mobile-app & event guide. 
+![](https://axpona.com/wp-content/uploads/Glass-Clings-to-Expo-768x768-1-300x300.png)
+[Central Doors Glass Clings – to Listening Rooms – $8,500 – SOLD ](https://axpona.com/sponsorships/)
+The central doors on the right side of AXPONA registration that lead to the Listening Rooms.
+**Specs:** Six double sided window clings. Sponsor provides the artwork. AXPONA produces and places.  
+Each window cling is 30” wide x 20” high.  
+Logo promoted as a sponsor on AXPONA website, mobile-app & event guide.
+![](https://axpona.com/wp-content/uploads/Glass-Clings-to-Listening-Rooms-768x768-1-300x300.png)
+[Glass Clings on Catwalk Entrance Doors – $2,500 – SOLD ](https://axpona.com/sponsorships/)
+**Specs:** Two double sided window clings. Sponsor provides the artwork. AXPONA produces and places.  
+Each window cling is 30” wide x 20” high. 
+![](https://axpona.com/wp-content/uploads/Glass-Clings-Catwalk-doors-768x768-1-300x300.png)
+[Glass Clings along Catwalk – $1,250 for 2 clings ](https://axpona.com/sponsorships/)
+Brand the popular catwalk that connects the 2nd floor of the Convention Center to the Hotel Lobby.
+**Specs:** Eight available glass clings along the walkway.  
+Size: 48″ wide x 32″ high
+![](https://axpona.com/wp-content/uploads/Bridge-Walkway-768x768-1-300x300.jpg)
+[Window Clings – Hotel 1st Floor – $2,250 for 2 clings ](https://axpona.com/sponsorships/)
+Specs: Two window clings. Sponsor provides the artwork. AXPONA produces and places.  
+Each window cling is 30” wide x 20” high.
+![](https://axpona.com/wp-content/uploads/1st-Floor-Window-Clings-768x768-1-300x300.png)
+* * *
+# Around AXPONA Advertising
+[Attendee Ticket & Online Registration – $5,000 – SOLD ](https://axpona.com/sponsorships/)
+Your logo and exhibit location on every ticket, attendee registration page and ticket confirmation email. Also, your logo promoted as a sponsor on AXPONA website, mobile-app & event guide.
+![](https://axpona.com/wp-content/uploads/TicketScreenShot2025-300x260.jpg)
+[Lanyard Sponsor – $5,000 – SOLD ](https://axpona.com/sponsorships/)
+Gain exposure by providing the official lanyards for the event distributed to every attendee, press, speaker and exhibitor. 
+**Specs:** Minimum quantity to be determined by AXPONA closer to the event. Approximately 8,000.  
+Sponsor responsible for producing and shipping lanyards to AXPONA.  
+Logo and Link included on the sponsor page of Show Directory and Website. 
+![](https://axpona.com/wp-content/uploads/Lanyards-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Lanyards-2-768x768-1-300x300.png)
+[Hotel Tower Restroom Sponsor – $500 per restroom, $3,500 for all floors – SOLD ](https://axpona.com/sponsorships/)
+Make a splash! Sponsor the public restrooms on the listening room floors in the hotel tower.
+**Specs:** One mirror cling, size 12″ wide x 18″ high.  
+Opportunity to provide promotional items or giveaways. (e.g. branded mints)  
+There is one public restroom on each exhibit floor in the hotel tower.
+![](https://axpona.com/wp-content/uploads/Bathroom-768x768-1-300x300.png)
+[AXPONA Café Branding – $3,000 exclusive or $1,000 per company ](https://axpona.com/sponsorships/)
+Specs: Sponsor promoted as the sponsor of the AXPONA Café.  
+Logo on two 6′ wide x 3′ high banners in the Café area.  
+Logo on EXPO Hall map and Food & Beverage pages in the event guide and on the website.  
+Opportunity to provide tent cards, branded napkins or other promotional items for the tables.
+![](https://axpona.com/wp-content/uploads/AXPONA-Cafe-768x768-1-300x300.png)
+[RENDevous “Starbucks” Café in Hotel Lobby / Dining Areas Tent Card Sponsorship – $2,500 – SOLD ](https://axpona.com/sponsorships/)
+Create brand visibility in areas where people gather to socialize and network!
+Your branded tent cards will be placed in social spaces and tables on the hotel lobby level.
+**Specs:** (2) Tent Cards on Long Tables  
+(1) Tent Card on Yellow Round Tables  
+Sponsor to create artwork. AXPONA to produce Table Tents.
+![](https://axpona.com/wp-content/uploads/Rendevous-768x768-1-300x300.png)
+[Concession Napkins Sponsor – $1,000 ](https://axpona.com/sponsorships/)
+Attendees and Exhibitors need to eat throughout the 3 days. Extend your brand awareness by sponsoring the AXPONA Concessions Area on the 2nd floor. As this location, participants make food & beverage purchases. 
+**Specs:** AXPONA provides quantity and specs.  
+Sponsor responsible for producing and shipping the napkins to AXPONA.
+**Here’s an idea!** Include a QR code that leads to a digital experience – this encourages attendees to interact with your brand beyond the napkin itself.
+![](https://axpona.com/wp-content/uploads/Concession-Napkins-768x768-1-300x300.png)
+[Branded Hydration Stations – $750 each, $2,500 for 7 ](https://axpona.com/sponsorships/)
+Gain visibility by owning the space. Working with show management you can be creative to message attendees. Ideas include providing branded disposable cups, small signage and promotion material distribution for the hydration stations throughout AXPONA! Hydration stations are available on Friday, Saturday & Sunday on the Hotel Floors, The EXPO Hall & Ear Gear Experience.
+Specs: AXPONA provides quantity and specs if providing cups.  
+Sponsor responsible for producing and shipping the cups to AXPONA.  
+Sponsor responsible for producing and shipping all materials and signage needed to brand this space.
+![](https://axpona.com/wp-content/uploads/Branded-Hydration-768x768-1-300x300.png)
+[Lobby Living Room Area Sponsor – $9,500 ](https://axpona.com/sponsorships/)
+**Create an intimate experience in the beautiful Renaissance Lobby.** Sponsor a lobby sitting area and get the opportunity to brand and create a space for you and your customers to mingle. You can offer beverages and snacks or something unique that will capture the attention of the 9,000+ audiophiles the lobby sees through the three days of AXPONA.
+**Specs:** You will be assigned one of the sitting areas in the hotel lobby to brand and decorate.  
+The sizes of these spaces are roughly 12′ x 12′.  
+The space will include the furniture that is already in place but other than that the space is raw and can be enhanced. You must get approval from work with AXPONA must approve all plans.  
+One 6′ wide x 3′ high sign with your logo  
+One 22″ wide x 28″ high sign with your logo.
+![](https://axpona.com/wp-content/uploads/Lobby-Living-Room-B-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Lobby-Living-Room-A-768x768-1-300x300.png)
+[Lobby Projector Sponsorship – $5,000 ](https://axpona.com/sponsorships/)
+This strategic placement of a branded video, will increase brand visibility and create a lasting impression among the 9,000+ attendees that visit the lobby over the course of the weekend.
+**Specs:** Your video or logo will be on display 24 hours a day over the three days of AXPONA; Friday, Saturday & Sunday.
+![](https://axpona.com/wp-content/uploads/Lobby-Screens-768x768-1-300x300.png)
+[Pen Sponsorship – $2,500 – SOLD ](https://axpona.com/sponsorships/)
+Attendees love swag! Have your branded pens distributed in the main lobby at AXPONA. Sponsors are responsible for providing pens and shipping and handling. We will distribute. Quantity TBD
+[Attendee Bags – $3,000 – SOLD ](https://axpona.com/sponsorships/)
+**SOLD!**
+Create a strong first impression at AXPONA via the bag sponsorship. Your bags will be prominently displayed for distribution in the registrations area throughout the 3 day event. In addition, your brand will be visible as attendees walk the show and long after as you continue to use the bag in everyday life.
+**Specs** : Sponsor responsible for producing and shipping the bags to AXPONA.  
+AXPONA provides quantity and specs.  
+AXPONA will place the attendee bags adjacent to AXPONA registration.
+![](https://axpona.com/wp-content/uploads/Attendee-Bags-768x768-1-300x300.png)
+[The Gather Bar Napkins Sponsor – $1,000 – SOLD ](https://axpona.com/sponsorships/)
+Showcase your brand at The Gather Bar – A place where attendees go to relax, network and drink. Sponsor the napkins used at the bar on all three days of AXPONA.
+**Specs:** Your branded napkins will be placed in the Gather Bar located on the lobby level of the hotel on Friday, Saturday & Sunday.  
+Sponsor responsible for producing and shipping the napkins to AXPONA.  
+AXPONA to provide specs and quantity.
+Here’s an idea! Include a QR code that leads to a digital experience – this encourages attendees to interact with your brand beyond the napkin itself.
+![](https://axpona.com/wp-content/uploads/Gather-Bar-Napkins-768x768-1-300x300.png)
+[Passport Program – $500 ](https://axpona.com/sponsorships/)
+**Limited Availability (15 Spots)**
+Drive traffic to your exhibit with AXPONA’s fun and interactive Passport Program! This mobile app-based game encourages attendees to visit participating exhibitors for a chance to win prizes.
+**How It Works:**
+  * All AXPONA attendees can play the Passport Program game through the Mobile App.
+  * Participants who complete the game during the show will be entered to win one of nine $100 prizes, with three winners announced daily!
+  * Attendees must visit all companies listed in the Passport Program to qualify for the giveaway.
+
+
+**Your Benefits:**
+  * A tabletop sign featuring your unique Passport ID Number to display at your exhibit.
+  * Your logo featured on Passport Program signage in a high-traffic area at AXPONA.
+
+
+* * *
+# Special Events, Lounge, Concert, VIP Branding
+[Concert Sponsor (Friday or Saturday) – $2,500 per night – SOLD ](https://axpona.com/sponsorships/)
+Align your brand with AXPONA’s evening entertainment.
+**Specs:** Logo included in concert promos – email, print ads, website, event guide.  
+Logo as sponsor on concert signage.  
+One 8’ wide x 4’ high sign in concert room.  
+Opportunity to do a seat drop or giveaway during the concert. Must be coordinated with and approved by AXPONA.  
+Opportunity to have a spokesperson from your company introduce the evening’s act.
+![](https://axpona.com/wp-content/uploads/Concert-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Concert-2-768x768-1-300x300.png)
+[Ear Gear Experience Title Sponsor – $2,500 – SOLD ](https://axpona.com/sponsorships/)
+Be the title sponsor of the Ear Gear Experience. Every person coming to Ear Gear Experience will see your promoted brand.
+**Specs** : Logo on Ear Gear Experience entrance unit.   
+Option to bring in 2 standard pop-up banners.  
+Logo on website, floorplans and event guide.
+![](https://axpona.com/wp-content/uploads/Ear-Gear-Experience-Title-768x768-1-300x300.png)
+[Expo Hall Title Sponsor – $2,000 ](https://axpona.com/sponsorships/)
+Be the title sponsor of the EXPO Hall. Every person coming to the EXPO HALL will see your promoted brand.
+**Specs:** Logo on the EXPO HALL entrance unit.   
+Option to bring in 2 standard pop-up banners.  
+Logo on website, floorplans and event guide.
+![](https://axpona.com/wp-content/uploads/Expo-Hall-Title-768x768-1-300x300.png)
+[Car Audio Showcase Title Sponsor – $2,000 ](https://axpona.com/sponsorships/)
+Be the title sponsor of the Car Audio Showcase. Every person coming to the Car Audio Showcase will see your promoted brand.
+**Specs:** Logo on the Car Audio Showcase entrance unit.   
+Option to bring in 2 standard pop-up banners.  
+Logo on website, floorplans and event guide.
+[Gold Lounge Sponsorship – $3,250 ](https://axpona.com/sponsorships/)
+Meet the VIPs! Promote your brand where Gold Pass attendees gather and get refreshments.
+**Specs:** Logo with event details emailed to all Gold Pass Holders pre-show.  
+Logo on 22″ wide x 28″ high Gold Lounge sign.  
+Logo on 3′ high x 6′ wide sign in Gold Lounge.  
+Opportunity to provide a branded gift or literature to gold pass attendees.  
+As an added bonus, you may also host a mixer event inside the Lounge (time approved by AXPONA) and promote after hours VIP listening sessions in your exhibit room.
+![](https://axpona.com/wp-content/uploads/Gold-Pass-Lounge-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Gold-Pass-Lounge-2-768x768-1-300x300.png)
+[Industry Welcome Mixer – $5,000 – SOLD ](https://axpona.com/sponsorships/)
+Sponsor the kick-off of AXPONA which is the largest gathering of audio industry trade professionals in North America all year! Exhibitors and trade professionals gather, reconnect, and network.
+**Specs:** Logo in pre-show emails to exhibitors and trade pass holders promoting the mixer.  
+Logo on website where mixer is promoted.  
+Logo on 22” wide x 28”high sign promoting mixer.  
+Logo on twelve 8 ½ x 11 signs throughout party location.  
+Opportunity to provide promotional materials and branded napkins during the party.  
+Opportunity to bring a standard pop-up banner for placement during the mixer.
+[Seminar Room Sponsor – $1,750 ](https://axpona.com/sponsorships/)
+Gain exposure in the Seminar Room and sponsor eight sessions over three days. 
+**Specs:** Sponsor receives one 6′ wide x 3′ high sign hung on wall in seminar room.  
+Opportunity to provide one seat drop.
+_Not Exclusive. Limited to 4 sponsors._
+![](https://axpona.com/wp-content/uploads/Seminar-Room-768x768-1-300x300.png)
+* * *
+# Speaking Opportunities
+[Master Class Theater Session – $750 ](https://axpona.com/sponsorships/)
+Lead a 30 minute presentation in the Master Class Theater located in the AXPONA Expo Hall.
+**Specs:** Session title and logo will appear on Master Class Theater signage, the AXPONA website, and Show directory. Subject matter must be educational and approved by AXPONA.
+![](https://axpona.com/wp-content/uploads/Master-Class-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Master-Class-2-768x768-1-300x300.png)
+* * *
+# Digital Advertising
+[Mobile App Sponsor – $5,000 – SOLD ](https://axpona.com/sponsorships/)
+Logo with mobile app promotion on the AXPONA website, event guide and signage at the show. Sponsor would have exclusive run-of-site advertising with rectangle banners (size TBD) and one pre-show push notificaton and one push notification each day of the show. 
+![](https://axpona.com/wp-content/uploads/Mobile-App-768x768-1-300x300.png) ![](https://axpona.com/wp-content/uploads/Mobile-App-2-768x768-1-300x300.png)
+[“See Us at AXPONA” Newsletter Ad – $995 ](https://axpona.com/sponsorships/)
+Exclusive advertising to AXPONA’s newsletter subscribers. The database has 10,000+ opt-in records, which includes AXPONA’s previous ticket buyers.
+Your exhibit will be featured with a “See us at AXPONA” Banner Ad in AXPONA’s promotional newsletter.
+Specs: 1200×300, jpg or png
+![](https://axpona.com/wp-content/uploads/See-Us-at-AXPONA-Newsletter-Ad-768x768-1-300x300.png)
+[“What’s New” Webinar Series – $2,995 ](https://axpona.com/sponsorships/)
+AXPONA offers the top global audio brands the ability to deliver timely and relevant content to consumers, industry, and press by participating in the “What’s New” Webinar Series.
+Designed to build product awareness and provide education to our passionate audio community, your in-house spokespersons can relay your visual story with best practices, product announcements, interviews, or advice from experts.
+Your exclusive webinar will be both live and have an on-demand archived version on AXPONA’s YouTube channel and website.
+Exclusive Sponsorship includes:  
+**Pre webinar:** Two promotion emails to the AXPONA newsletter email list with your logo and link, two posts on AXPONA’s social media channels and three custom registration questions  
+**During Webinar** : Reminder email to registered attendees day of the webinar.  
+**Post webinar:** Pre-registration and attendee contact list for the live webinar (opt-in), Data will include a lead report of registrants’ contact information (opt-in). Your logo on post-webinar thank you email to attendees, company name and URL in webinar description on AXPONA’s YouTube channel and AXPONA webinar archive page.
+![](https://axpona.com/wp-content/uploads/Webinar-768x768-1-300x300.png)
+[Website Display Ads – ROS – $995 per month ](https://axpona.com/sponsorships/)
+728×90 ad
+[Website Display Ads – Home Page – $995 per month ](https://axpona.com/sponsorships/)
+300×250 ad on homepage.
+![](https://axpona.com/wp-content/uploads/Website-Ad-768x768-1-300x300.png)
+[Must See Video Series – $1,250 ](https://axpona.com/sponsorships/)
+Tell attendees why they must visit you! AXPONA will send your one minute video to all registered ticket buyers, press and more on why the viewer must visit you at AXPONA. Limited to 4 brands, AXPONA will also post your video and description on Facebook. Ask for a sample from a previous year!
+![](https://axpona.com/wp-content/uploads/Must-See-Video-Series-768x768-1-300x300.png)
+[![](https://axpona.com/wp-content/uploads/yootheme/cache/0f/Axpona-Logo-White-no-tag-0f92a495.png)](https://axpona.com/sponsorships/)
+  * [](https://www.facebook.com/axpona)
+  * [](https://www.instagram.com/axpona/)
+  * [](https://www.youtube.com/axpona)
+  * [](https://www.linkedin.com/company/axpona-audio-expo-north-america)
+
+
+Copyright 2025
+**SHOW HOURS:**  
+Friday, April 10, 2026: 10:00 AM – 6:00 PM  
+Saturday, April 11, 2026: 10:00 AM – 6:00 PM  
+Sunday, April 12, 2026: 10:00 AM – 4:00 PM
+**LOCATION:**  
+Renaissance Schaumburg  
+Hotel & Convention Center  
+1551 N Thoreau Dr, Schaumburg, IL, 60173
+  * [ Privacy Policy ](https://axpona.com/privacy-policy/)
+  * [ Contact Us ](https://axpona.com/contact-us/)
+  * [ Newsletter Sign-up ](https://mailchi.mp/jdevents/axpona-newsletter-sign-up-page)
+
+
+We use cookies and similar technologies to improve your experience on our website. 
+Accept
+Reject
+Manage Settings
+## Privacy Settings
+This website uses cookies and similar technologies. They are grouped into categories, which you can review and manage below. If you have accepted any non-essential cookies, you can change your preferences at any time in the settings. 
+###  Functional 
+These technologies are required to activate the core functionality of our website. 
+###  Preferences 
+These technologies allow our website to remember your preferences and provide you with a more personalized experience. 
+  * OpenStreetMap
+
+
+Accept all
+Reject all
+Save
+We use cookies and similar technologies to improve your experience on our website. 
+Accept
+Reject
+Manage Settings

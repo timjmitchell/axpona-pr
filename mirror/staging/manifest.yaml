@@ -1,0 +1,73 @@
+# Staging Layer Manifest — AXPONA Mirror
+# Structured extraction outputs (silver). Parsed and enriched data from domain layer.
+# DDD analog: Anti-corruption layer — translates raw captures into domain vocabulary.
+#
+# Related: data-architecture-spec.md Section 1 (Staging Layer)
+# Related: docs/STRUCTURED_EXTRACTION.md, docs/EXTRACTION_VALIDATION.md
+
+layer: staging
+description: >
+  Structured extractions from domain-layer raw data. Three-tier extraction
+  pipeline: Tier 1 (regex), Tier 2 (Ollama enrichment), Tier 3 (Claude
+  synthesis). Each file represents an extraction pass with provenance metadata.
+
+status: active
+
+# Extraction pipeline
+pipeline:
+  tier1_regex:
+    output: structured-extraction.json
+    description: >
+      Regex-based extraction of exhibitor spaces, sponsorship inventory,
+      ticket pricing, and demographics from raw markdown.
+    source_files:
+      - ../domain/exhibitor-spaces-raw.md
+      - ../domain/sponsorship-inventory-raw.md
+      - ../domain/ticket-pricing-raw.md
+      - ../domain/demographics-raw.md
+
+  tier2_ollama:
+    output: enriched-extraction.json
+    description: >
+      Ollama-enriched extraction adding entity classification, relationship
+      detection, and confidence scores to Tier 1 outputs.
+    model: llama3.2
+    source: structured-extraction.json
+
+  tier2_test:
+    output: exhibitor-extraction-test.json
+    description: >
+      Test extraction run on exhibitor directory subset. Used for pipeline
+      validation before full-scale extraction.
+    source_files:
+      - ../domain/exhibitor-directory-raw.md
+
+  tier3_sentiment:
+    output: sentiment-extraction.json
+    description: >
+      Community sentiment extraction from 13 forum threads. 202 deduplicated
+      records with sentiment polarity, topics, and source attribution.
+    model: claude-sonnet-4-20250514
+    source_files:
+      - ../domain/forum-*-raw.md
+
+# Validation rules
+validation:
+  quality_thresholds:
+    min_confidence: 0.6
+    max_duplicate_rate: 0.05
+    required_fields: [entity_type, source_url, confidence]
+  checks:
+    - name: entity_count
+      description: Verify extraction produces expected entity counts
+    - name: source_attribution
+      description: Every extracted entity traces back to a domain-layer source
+    - name: deduplication
+      description: Cross-extraction dedup by entity name + source
+
+# Contents inventory
+contents:
+  - structured-extraction.json    # Tier 1 regex: spaces, sponsorship, tickets, demographics
+  - enriched-extraction.json      # Tier 2 Ollama: enriched entities with classification
+  - exhibitor-extraction-test.json  # Tier 2 test: exhibitor directory subset
+  - sentiment-extraction.json     # Tier 3 Claude: 202 forum sentiment records

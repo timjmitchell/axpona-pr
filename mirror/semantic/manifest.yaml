@@ -1,0 +1,85 @@
+# Semantic Layer Manifest — AXPONA Mirror
+# Metric definitions and KPI formulas. Published Language for analytics.
+# DDD analog: Query interface — the vocabulary all stakeholders share.
+#
+# Related: data-architecture-spec.md Section 7 (Semantic Layer)
+# Related: marts/business-model-synthesis.yaml
+
+layer: semantic
+description: >
+  Metric definitions, KPI formulas, and the Published Language for AXPONA
+  analytics. Defines what each metric means, how it's calculated, and
+  which mart fact table sources it. This layer enforces vocabulary
+  without enforcing a single physical model.
+
+status: planned
+
+# Priority metrics (from data-architecture-spec.md Section 7)
+metrics:
+  rebooking_rate:
+    definition: "% exhibitors rebooked within 30 days of show close"
+    formula: "COUNT(rebooked_within_30d = true) / COUNT(*)"
+    fact_source: fct_exhibitor_edition
+    business_model: "Marketplace (supply retention)"
+    priority: critical
+    confirmed_value: 0.80  # client data + offering memorandum; matches CEIR industry avg
+
+  attendee_rereg_rate:
+    definition: "% attendees who return for a subsequent edition"
+    formula: "COUNT(prior_edition_attended = true) / COUNT(*)"
+    fact_source: fct_registration
+    business_model: "Marketplace (demand retention)"
+    priority: low  # client confirms not a concern; 85% are first-timers
+    confirmed_value: 0.15
+
+  floor_plan_fill_pct:
+    definition: "Assigned spaces / total spaces at T-90 days"
+    formula: "COUNT(assigned) / COUNT(total_spaces) at edition_date - 90"
+    fact_source: fct_space_assignment
+    business_model: "Marketplace (supply capacity)"
+    priority: critical
+
+  sponsorship_sell_through:
+    definition: "Sold items / available items by category"
+    formula: "COUNT(sold = true) / COUNT(*) GROUP BY category"
+    fact_source: fct_sponsorship_delivery
+    business_model: "Advertising (demand)"
+    priority: high
+
+  attendee_growth_yoy:
+    definition: "Edition-over-edition attendee count change"
+    formula: "(current_edition_count - prior_edition_count) / prior_edition_count"
+    fact_source: fct_registration
+    business_model: "Marketplace (demand growth)"
+    priority: high
+
+  services_attach_rate:
+    definition: "Services revenue / space revenue per exhibitor"
+    formula: "SUM(services_revenue) / SUM(space_revenue)"
+    fact_source: fct_exhibitor_edition
+    business_model: "Marketplace (ARPU)"
+    priority: high
+
+  edition_margin:
+    definition: "(Total revenue - total cost) / total revenue"
+    formula: "(total_revenue - total_cost) / total_revenue"
+    fact_source: fct_edition_pnl
+    business_model: "Project (profitability)"
+    priority: critical
+
+  trade_pass_growth:
+    definition: "YoY change in Trade Pass registrations"
+    formula: "YoY % change WHERE ticket_type = 'trade'"
+    fact_source: fct_registration
+    business_model: "Marketplace (B2B engagement)"
+    priority: medium
+
+  sponsor_renewal_rate:
+    definition: "% sponsors returning edition-over-edition"
+    formula: "COUNT(is_renewal = true) / COUNT(*)"
+    fact_source: fct_sponsorship_delivery
+    business_model: "Advertising (retention)"
+    priority: high
+
+# Contents inventory (planned)
+contents: []

@@ -1,0 +1,166 @@
+# Mirror Architecture — System Manifest
+# Declares what this mirror represents and how it connects to the domain model.
+#
+# This is the AXPONA deployment of the mirror pattern — same scaffold as
+# rockbot-pr/mirror (Rockbot engagement), different domain content.
+# AXPONA is a two-sided marketplace (trade shows); Rockbot is a content platform.
+#
+# Related: ADR-0004, research-pr#37
+
+version: "1.0.0"
+kind: mirror
+name: axpona-mirror
+description: >
+  AXPONA client engagement mirror. Standalone evaluation environment for
+  trade show operations — exhibitor lifecycle, sponsorship inventory,
+  floor plan optimization, and edition-level P&L analytics.
+
+# What organization/domain does this mirror represent?
+target:
+  organization: axpona
+  parent_company: JD Events LLC
+  domain: trade-shows
+  vertical: audio
+  description: >
+    Two-sided marketplace connecting exhibitors (700+ brands, 5 space types)
+    with attendees (10,910 in 2025) at North America's largest consumer
+    audio show. 24-year track record, annual edition cycle. Revenue model:
+    marketplace (0.6) + advertising/sponsorship (0.25) + project (0.15).
+
+# Architecture references — the authoritative sources this mirror derives from
+architecture_refs:
+  strategic_ddd: companies/axpona/mirror/strategic-ddd.md
+  ubiquitous_language: companies/axpona/mirror/ubiquitous-language.md
+  canonical_schema: companies/axpona/mirror/schemas/axpona-schema.sql
+  data_architecture: companies/axpona/mirror/data-architecture-spec.md
+  classification: companies/axpona/classification.md
+  business_model_synthesis: companies/axpona/business-model-synthesis.md
+  ddd_overlay: companies/axpona/mirror/bizbok-ddd-overlay.md
+  ddd_validation: companies/axpona/mirror/ddd-derivation-validation.md
+  signal_validation: docs/testing/axpona-signal-validation.md
+
+# KB pattern references — links this mirror to the knowledge graph
+pattern_refs:
+  mirror-architecture:
+    id: mirror-architecture
+    provenance: 1P
+    description: >
+      Manifest-driven data architecture scaffold. Same pattern as rockbot-pr mirror,
+      applied to trade show domain. Proves transferability across verticals.
+    extends: ddd
+    related: [explicit-architecture, scale-projection]
+    capabilities: [data-due-diligence, reference-generation, synthesis-and-simulation]
+  data-system-classification:
+    id: data-system-classification
+    provenance: 1P
+    description: Classification framework that drives system_classification below
+    capabilities: [business-model-synthesis, system-primitive-decomposition, data-due-diligence]
+  axpona-strategic-ddd:
+    id: axpona-strategic-ddd
+    provenance: 1P
+    description: Strategic DDD for 8 bounded contexts — drives domain manifest
+    capabilities: [bounded-context-extraction, ddd-architecture-derivation]
+  ddd-medallion-alignment:
+    id: ddd-medallion-alignment
+    provenance: 1P
+    description: DDD-to-Medallion alignment — drives layer design decisions
+    capabilities: [domain-reference-architecture, data-due-diligence]
+  bizbok-ddd-overlay-tradeshow:
+    id: bizbok-ddd-overlay-tradeshow
+    provenance: 1P
+    description: >
+      BIZBOK-to-DDD derivation for trade show industry. Documents CIM-to-PIM
+      mapping where BIZBOK types graduate to DDD bounded contexts when they
+      have independent lifecycles, capabilities, and team ownership.
+    capabilities: [domain-data-model, ddd-architecture-derivation]
+
+# System classification — which of the four data system types are present?
+# AXPONA is Work-dominant (40%) — logistics, vendor coordination, project management
+system_classification:
+  application:
+    weight: 0.20
+    description: >
+      Registration, exhibitor portals, badge scanning. Unity Event Solutions
+      (ticketing), exhibitor CRM, badge/lead retrieval vendor systems.
+    bounded_contexts: [attendee, interaction]
+    query_interface: OLTP
+    stores: [unity_events, exhibitor_crm, badge_scan_vendor]
+
+  work:
+    weight: 0.40
+    description: >
+      Primary system type. Event planning, logistics, vendor coordination,
+      floor plan management, sponsorship tracking. At AXPONA's scale, many
+      "systems" are spreadsheets, email chains, or manual processes.
+    bounded_contexts: [exhibitor, sponsorship, exhibition_space, event]
+    query_interface: unstructured
+
+  analytics:
+    weight: 0.15
+    description: >
+      Post-show reporting, exhibitor ROI, edition P&L, attendee analytics.
+      Semantic layer metrics: rebooking rate, floor plan fill %, sponsorship
+      sell-through, attendee growth YoY.
+    bounded_contexts: []
+    query_interface: OLAP
+
+  record:
+    weight: 0.25
+    description: >
+      Contracts (DocuSign/PandaDoc), invoices, accounting (QuickBooks),
+      compliance documents. Authoritative business facts.
+    bounded_contexts: [agreement, finance]
+    query_interface: constrained
+
+# Infrastructure — self-contained for mirror evaluation
+infrastructure:
+  owned: true
+  services:
+    postgresql:
+      purpose: Schema persistence — dimensional models, entity tables, cross-context edges
+      port: 5434
+      status: planned
+    qdrant:
+      purpose: Vector storage — corpus embeddings from ephemeral collection
+      port: 6333
+      collections: [ephemeral_axpona]
+      status: active  # already populated from corpus collection
+    ollama:
+      purpose: Local embeddings (nomic-embed-text) for RAG pipeline
+      port: 11434
+      status: active
+  notes: >
+    Services use the same ports as semops-hub-pr shared infra for compatibility.
+    Qdrant ephemeral_axpona collection already exists from corpus collection pipeline.
+
+# Design approaches applied
+design_approaches:
+  foundation: ddd
+  specialized:
+    - two-sided-marketplace     # Exhibitor (supply) / Attendee (demand) dynamics
+    - edition-as-cohort         # Edition is the conformed dimension (join key)
+    - ufi-5s-revenue-model      # Space, Services, Sign-up, Sponsorship, Subscription
+  deferred:
+    - event-driven      # Domain events are batch captures, not streaming
+    - data-mesh          # Not applicable — single organizer, ~25 employees
+
+# Synthetic data parameters (from signal validation)
+synthetic_parameters:
+  editions: 7  # 2020-2026
+  exhibitors_per_edition: [180, 220]  # growing trend
+  attendees_per_edition: [6000, 11000]  # growing, COVID dip 2020-2021
+  sponsors_per_edition: [30, 50]
+  space_types: 5  # listening_room, expo, ear_gear, car_audio, alti
+  ticket_types: 6
+  sponsorship_items: 40  # across 6 categories
+  rebooking_rate: 0.80  # confirmed: client data + offering memorandum (matches CEIR industry avg)
+  attendee_rereg_rate: 0.15  # confirmed: client data; not a concern per client
+  checkin_rate: 0.85  # industry standard
+
+# Layer manifests
+layers:
+  domain: domain/manifest.yaml
+  staging: staging/manifest.yaml
+  intermediate: intermediate/manifest.yaml
+  marts: marts/manifest.yaml
+  semantic: semantic/manifest.yaml
