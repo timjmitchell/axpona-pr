@@ -1,0 +1,10 @@
+# Pattern Registry — axpona-pr
+# This is the deployment's own pattern registry.
+# Core patterns adopted here should reference their core origin.
+# See: https://github.com/timjmitchell/dx-hub-pr/blob/main/docs/design-docs/DD-0002-consulting-deployment-pattern.md
+#
+# Fields:
+#   origin: core (adopted from SemOps core) | deployment (domain-specific)
+#   adoption: adopted | extended | declined | deferred (for origin: core patterns)
+
+patterns: []
