@@ -29,14 +29,14 @@ target:
 
 # Architecture references — the authoritative sources this mirror derives from
 architecture_refs:
-  strategic_ddd: companies/axpona/mirror/strategic-ddd.md
-  ubiquitous_language: companies/axpona/mirror/ubiquitous-language.md
-  canonical_schema: companies/axpona/mirror/schemas/axpona-schema.sql
-  data_architecture: companies/axpona/mirror/data-architecture-spec.md
+  strategic_ddd: mirror/domain/outside-in/strategic-ddd.md
+  ubiquitous_language: mirror/domain/outside-in/ubiquitous-language.md
+  canonical_schema: mirror/infrastructure/schemas/axpona-schema.sql
+  data_architecture: mirror/infrastructure/data-architecture-spec.md
   classification: companies/axpona/classification.md
-  business_model_synthesis: companies/axpona/business-model-synthesis.md
-  ddd_overlay: companies/axpona/mirror/bizbok-ddd-overlay.md
-  ddd_validation: companies/axpona/mirror/ddd-derivation-validation.md
+  business_model_synthesis: mirror/domain/outside-in/business-model-synthesis.md
+  ddd_overlay: mirror/domain/outside-in/bizbok-ddd-overlay.md
+  ddd_validation: mirror/domain/outside-in/ddd-derivation-validation.md
   signal_validation: docs/testing/axpona-signal-validation.md
 
 # KB pattern references — links this mirror to the knowledge graph
@@ -157,10 +157,14 @@ synthetic_parameters:
   attendee_rereg_rate: 0.15  # confirmed: client data; not a concern per client
   checkin_rate: 0.85  # industry standard
 
-# Layer manifests
+# Layer manifests (4-layer DDD-aligned model)
 layers:
   domain: domain/manifest.yaml
-  staging: staging/manifest.yaml
-  intermediate: intermediate/manifest.yaml
-  marts: marts/manifest.yaml
-  semantic: semantic/manifest.yaml
+  application: null  # scaffolded, no manifest yet
+  infrastructure:
+    data:
+      staging: infrastructure/data/staging/manifest.yaml
+      intermediate: infrastructure/data/intermediate/manifest.yaml
+      marts: infrastructure/data/marts/manifest.yaml
+      semantic: infrastructure/data/semantic/manifest.yaml
+  presentation: null  # scaffolded, no manifest yet

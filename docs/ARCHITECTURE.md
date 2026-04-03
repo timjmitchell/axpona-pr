@@ -57,15 +57,14 @@ What this repo consumes:
 
 ## Key Components
 
-### Mirror Architecture
+### Mirror Architecture (4-Layer DDD-Aligned)
 
 | Layer | Directory | Purpose |
 |-------|-----------|---------|
-| Domain | `mirror/domain/` | Source contracts, corpus manifests |
-| Bronze (Staging) | `mirror/staging/` | Raw structured extractions |
-| Silver (Intermediate) | `mirror/intermediate/` | Normalized domain model |
-| Gold (Semantic/Marts) | `mirror/semantic/`, `mirror/marts/` | Enrichment outputs |
-| Governance | `mirror/governance/` | Lineage, quality rules |
+| Domain | `mirror/domain/` | Business architecture — strategic DDD, UL, business model |
+| Application | `mirror/application/` | Client-specific solutions — agents, intake, issues |
+| Infrastructure | `mirror/infrastructure/` | Data pipeline — medallion layers, schemas, corpus |
+| Presentation | `mirror/presentation/` | Client-facing deliverables — diagrams, gap analysis |
 
 ### Analysis Documents
 
@@ -87,11 +86,27 @@ What this repo consumes:
 
 ## Dependencies
 
+### What We Consume
+
 | Repo | What We Consume |
 |------|-----------------|
 | dx-hub-pr | Architecture governance, patterns, coordination |
 | semops-hub-pr | Schema, methodology, infrastructure services |
 | research-pr | Pipeline tooling, signal collection infrastructure |
+
+### What Consumes Us
+
+| Repo | What They Consume |
+|------|-------------------|
+| — | No downstream consumers (leaf deployment) |
+
+## Versioning Notes
+
+This repo follows the consulting deployment pattern — it is a leaf node with no downstream consumers. Version bumps are informational and track engagement milestones, not API contracts.
+
+- **PATCH:** Data refreshes, extraction re-runs, doc updates
+- **MINOR:** New analysis outputs, additional bounded contexts, schema additions
+- **MAJOR:** Structural changes to mirror architecture, schema breaking changes
 
 ## Related Documentation
 

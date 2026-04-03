@@ -1,35 +1,31 @@
-# Domain Layer — Raw Data Sources
+# Domain Layer — Business Architecture
 
 **Status:** Active
-**DDD Analog:** Domain events, raw facts
-**Medallion:** Bronze
+**DDD Analog:** Bounded contexts, domain model, ubiquitous language
 
 ## What Belongs Here
 
-Raw, untransformed data captures from public signals:
+Business architecture artifacts that define the domain model:
 
-- **Website pages** — crawled markdown from axpona.com (pricing, exhibitor info, demographics)
-- **Forum threads** — community discussion captures from ASR, Head-Fi, WBF, SBAF, Reddit, Audiophile Style
-- **Source manifest** — `sources.json` declaring all crawl targets with signal metadata
+- **outside-in/** — Strategic DDD, ubiquitous language, business model synthesis, BIZBOK overlay
+- **patterns/** — Domain pattern registry (future)
+- **coherence/** — Coherence scoring (future)
 
-## Rules
+## Sublayers
 
-1. **No transformation** — files are verbatim Crawl4AI/Playwright captures
-2. **Naming convention** — `{source_type}-{slug}-raw.md` for crawled content
-3. **Source attribution** — every file traces to a URL in `sources.json`
-4. **Deduplication** — by URL; re-crawls replace existing files
+| Directory | Purpose | Status |
+|-----------|---------|--------|
+| `outside-in/` | Strategic DDD, UL, business model, forum research | Active |
+| `patterns/` | Domain-specific pattern registry | Future |
+| `coherence/` | Coherence scoring and validation | Future |
 
 ## Key Files
 
 | File | Description |
 |------|-------------|
-| `sources.json` | 29 crawl targets with signal_source, tags, reliability scores |
-| `*-raw.md` | Raw crawled markdown (website pages and forum threads) |
+| `outside-in/strategic-ddd.md` | 8 bounded contexts for trade show operations |
+| `outside-in/ubiquitous-language.md` | Domain language definitions |
+| `outside-in/bizbok-ddd-overlay.md` | BIZBOK-to-DDD derivation for trade shows |
+| `outside-in/business-model-synthesis.md` | Business model analysis |
+| `outside-in/forum-crawl-research.md` | Forum source research and assessment |
 | `manifest.yaml` | Layer manifest with contents inventory |
-
-## Signal Sources
-
-- 3 pricing pages (exhibitor spaces, sponsorship, tickets)
-- 7 marketing pages (homepage, about, etc.)
-- 13 community forum threads
-- 3 industry/regulatory pages
