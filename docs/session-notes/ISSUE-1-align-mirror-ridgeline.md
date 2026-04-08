@@ -1,7 +1,7 @@
 # Issue #1: Align mirror to Ridgeline 4-layer model
 
 > **Issue:** [axpona-pr#1](https://github.com/timjmitchell/axpona-pr/issues/1)
-> **Status:** In Progress
+> **Status:** Complete
 
 ## 2026-04-02
 <!-- @appended by /issue on 2026-04-02T00:00:00Z -->
@@ -14,12 +14,17 @@ Current state has mixed concerns: `domain/` holds both raw data and domain docs,
 
 ### Work Done
 
--
+- Migrated all files to 4-layer model (domain, application, infrastructure, presentation)
+- Domain docs → `mirror/domain/outside-in/`
+- Data pipeline layers (bronze, staging, intermediate, marts, semantic, governance) → `mirror/infrastructure/data/`
+- Schemas → `mirror/infrastructure/schemas/`
+- Show-timing research → `mirror/presentation/`
+- Removed empty `gold/`, `silver/` directories
+- Scaffolded `application/` (agents, intake, issues) and `presentation/` (diagrams, gaps)
+- Updated `mirror/README.md`, `mirror/manifest.yaml`, `mirror/domain/README.md`
+- ARCHITECTURE.md: added Versioning Notes, inbound Dependencies table, updated mirror table
+- CLAUDE.md: added Cross-Repo Context, Available Commands sections, updated mirror ref
 
 ### Next Steps
 
-- Migrate files according to the mapping in the issue
-- Scaffold `application/` and `presentation/` layers
-- Remove empty/redundant directories (`gold/`, `silver/`)
-- Update `mirror/README.md` and `mirror/manifest.yaml`
-- Fix arch-sync findings in ARCHITECTURE.md and CLAUDE.md
+- None — all acceptance criteria met
