@@ -14,12 +14,27 @@ Key constraint: research-pr owns the pipeline commands — axpona-pr consumes th
 
 ### Work Done
 
-- Issue reviewed and session note created
-- 
+- Pre-pipeline snapshot: 96 hand-built artifacts (6.5MB) preserved in `pre-pipeline/`
+- **Phase 1 complete:** `/classify` → `/predict` → `/reference-commit` → `/synthesize`
+  - classification.yaml: events/trade_shows/audio, revenue corrected to <$5M from OM
+  - reference-model.yaml: 57 entities, Work-dominant system mix
+  - engagement.yaml: 3P/1P boundary declared
+  - context.md: 1P intel brief with confirmed financials ($2.1M rev, $780K EBITDA, 3 staff)
+  - business-model.yaml: investment thesis, 8 contexts, Sponsorship promoted to CORE
+- **Phase 2 (partial):** `/derive` complete
+  - STRATEGIC_DDD.md: 8 contexts, 15 commands, 12 domain events, 2 sagas
+  - UBIQUITOUS_LANGUAGE.md: reconciled with hand-built UL
+  - system-inventory.yaml, system-classification.yaml
+  - value-stream-map.yaml: 3 value streams (plan-to-retain, prospect-to-rebook, sponsor-to-renew)
+  - information-map.yaml: 8 primary + 5 secondary concepts, 12 value objects
+  - capability-vs-crossmap.yaml: 3 cross-maps with saga derivations
+- Key finding: OM confirms $2.1M revenue (not $5M-$20M), 3 direct staff, 36% EBITDA margin
+- MatchmakingAppointment dropped (gap analysis: not observable)
+- Reconcile-not-rederive strategy applied throughout — hand-built detail preserved
 
 ### Next Steps
 
-- Decide on reconciliation strategy for hand-built artifacts (DDD, schema, business model) vs. re-derive
-- Check if trade show / event marketplace archetype exists in research-pr catalogs
-- Begin Phase 1: `/classify` → `/predict` → `/reference-commit` → `/synthesize`
-- Resolve relationship with Issue #1 (subset — close as superseded or keep as child)
+- Phase 2 remaining: `/derive-schema`, `/derive-registry`, `/derive-analytics`, `/derive-manifests`
+- Phase 3: `/process-analysis`, `/scale-project`
+- Phase 4: `/derive-topology`, corpus infrastructure, Docker Compose
+- Resolve Issue #1 relationship (close as superseded by #3)
