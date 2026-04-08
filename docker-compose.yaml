@@ -54,6 +54,22 @@ services:
       timeout: 5s
       retries: 5
 
+  neo4j:
+    image: neo4j:5-community
+    container_name: axpona-neo4j
+    environment:
+      NEO4J_AUTH: none
+    ports:
+      - "7476:7474"            # HTTP — avoids semops-hub-pr 7474, research-pr 7475
+      - "7689:7687"            # Bolt — avoids semops-hub-pr 7687, research-pr 7688
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD", "neo4j", "status"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+
   # ── Agent Runtime ──────────────────────────────────────────
 
   agent-runtime:
@@ -110,3 +126,4 @@ services:
 volumes:
   postgres_data:
   qdrant_data:
+  neo4j_data:
