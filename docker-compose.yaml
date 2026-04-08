@@ -2,43 +2,24 @@
 #
 # AXPONA — Agentic Explicit-Enterprise Stack
 #
-# Derived from K8s projection manifests (projection/*.yaml).
-# Local development equivalent of the production K8s deployment.
+# Data layer: Supabase (PostgreSQL + pgvector + REST API + Studio)
+#   Managed separately via `npx supabase start` — not in this compose file.
+#   See supabase/config.toml for configuration.
 #
-# Architecture:
-#   PostgreSQL (domain model, 26 tables) + Qdrant (corpus) +
-#   Agent Runtime (38 capabilities) + API (registration, portals) +
-#   Pipeline (bronze → silver → gold)
+# This compose file covers supplementary services that Supabase doesn't provide:
+#   Qdrant (vector search — legacy, migrating to pgvector)
+#   Neo4j (domain model graph visualization)
+#   Agent Runtime + API + Pipeline
 #
 # Usage:
-#   docker compose up -d              # Start all services
-#   docker compose up postgres qdrant # Start data layer only
-#   docker compose run pipeline bronze   # Run bronze extraction
-#   docker compose run pipeline silver   # Run silver transform
-#   docker compose run pipeline gold     # Run gold analytics
-#   docker compose run pipeline post_show # Run full post-show pipeline
+#   npx supabase start                     # Start Supabase (PostgreSQL, Studio, API)
+#   docker compose up -d                   # Start supplementary services
+#   npx supabase db reset                  # Apply migrations + seed data
+#   cd mirror/application/evidence-app && npm run dev  # Start dashboards
 
 services:
 
-  # ── Data Layer ─────────────────────────────────────────────
-
-  postgres:
-    image: postgres:16
-    container_name: axpona-postgres
-    environment:
-      POSTGRES_DB: axpona
-      POSTGRES_USER: ${POSTGRES_USER:-axpona}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-axpona_dev}
-    ports:
-      - "5440:5432"            # Avoids semops-hub-pr 5434
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - ./mirror/infrastructure/schemas/axpona-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-axpona}"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
+  # ── Supplementary Data Layer ──────────────────────────────
 
   qdrant:
     image: qdrant/qdrant:v1.12
@@ -78,14 +59,12 @@ services:
       dockerfile: Dockerfile.agent
     container_name: axpona-agent
     environment:
-      DATABASE_URL: postgresql://${POSTGRES_USER:-axpona}:${POSTGRES_PASSWORD:-axpona_dev}@postgres:5432/axpona
+      DATABASE_URL: postgresql://postgres:postgres@host.docker.internal:5440/postgres
       QDRANT_URL: http://qdrant:6333
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
     ports:
       - "8200:8000"            # Agent runtime — deployment repo range
     depends_on:
-      postgres:
-        condition: service_healthy
       qdrant:
         condition: service_healthy
 
@@ -97,12 +76,9 @@ services:
       dockerfile: Dockerfile.api
     container_name: axpona-api
     environment:
-      DATABASE_URL: postgresql://${POSTGRES_USER:-axpona}:${POSTGRES_PASSWORD:-axpona_dev}@postgres:5432/axpona
+      DATABASE_URL: postgresql://postgres:postgres@host.docker.internal:5440/postgres
     ports:
       - "8280:8080"            # API — deployment repo range
-    depends_on:
-      postgres:
-        condition: service_healthy
 
   # ── Pipeline (on-demand) ───────────────────────────────────
 
@@ -112,18 +88,15 @@ services:
       dockerfile: Dockerfile.pipeline
     container_name: axpona-pipeline
     environment:
-      DATABASE_URL: postgresql://${POSTGRES_USER:-axpona}:${POSTGRES_PASSWORD:-axpona_dev}@postgres:5432/axpona
+      DATABASE_URL: postgresql://postgres:postgres@host.docker.internal:5440/postgres
       QDRANT_URL: http://qdrant:6333
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
     depends_on:
-      postgres:
-        condition: service_healthy
       qdrant:
         condition: service_healthy
     profiles:
       - pipeline    # Only runs on-demand: docker compose --profile pipeline run pipeline <stage>
 
 volumes:
-  postgres_data:
   qdrant_data:
   neo4j_data:

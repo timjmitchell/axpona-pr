@@ -1,0 +1,58 @@
+appearance:
+  default: system
+  switcher: true
+
+theme:
+  colorPalettes:
+    default:
+      light:
+        - "#1a365d"
+        - "#2b6cb0"
+        - "#4299e1"
+        - "#63b3ed"
+        - "#bee3f8"
+        - "#c6a052"
+        - "#d4a843"
+        - "#e8c36a"
+        - "#38a169"
+        - "#68d391"
+      dark:
+        - "#2b6cb0"
+        - "#4299e1"
+        - "#63b3ed"
+        - "#90cdf4"
+        - "#bee3f8"
+        - "#d4a843"
+        - "#e8c36a"
+        - "#f6e05e"
+        - "#48bb78"
+        - "#9ae6b4"
+  colors:
+    primary:
+      light: "#1a365d"
+      dark: "#4299e1"
+    accent:
+      light: "#c6a052"
+      dark: "#e8c36a"
+    base:
+      light: "#ffffff"
+      dark: "#09090b"
+    info:
+      light: "#2b6cb0"
+      dark: "#63b3ed"
+    positive:
+      light: "#38a169"
+      dark: "#68d391"
+    warning:
+      light: "#d69e2e"
+      dark: "#f6e05e"
+    negative:
+      light: "#e53e3e"
+      dark: "#fc8181"
+
+plugins:
+  components:
+    "@evidence-dev/core-components": {}
+
+  datasources:
+    "@evidence-dev/postgres": {}

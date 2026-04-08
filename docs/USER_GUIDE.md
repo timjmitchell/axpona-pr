@@ -1,29 +1,40 @@
 # User Guide — AXPONA
 
 > **Engagement:** axpona-pr
-> **Stack:** Agentic Explicit-Enterprise (PostgreSQL + Qdrant + Neo4j + Agent Runtime)
-> **Issue:** [#3](https://github.com/timjmitchell/axpona-pr/issues/3)
+> **Stack:** Agentic Explicit-Enterprise (Supabase + Qdrant + Neo4j + Evidence.dev)
+> **Issue:** [#3](https://github.com/timjmitchell/axpona-pr/issues/3), [#4](https://github.com/timjmitchell/axpona-pr/issues/4)
 
 ## Quick Start
 
 ```bash
-# 1. Start the data layer
-docker compose up -d postgres qdrant neo4j
+# 1. Start the data layer (Supabase — PostgreSQL + pgvector + REST API + Studio)
+npx supabase start
 
-# 2. Load the domain model into Neo4j
+# 2. Apply schema migrations
+npx supabase db reset
+
+# 3. Start supplementary services (Qdrant, Neo4j)
+docker compose up -d
+
+# 4. Load the domain model into Neo4j
 python scripts/load_axpona_graph.py
 
-# 3. Open Neo4j Browser
-open http://localhost:7476
+# 5. Start the Evidence dashboard
+cd mirror/application/evidence-app
+npm install
+npm run dev
 ```
 
-PostgreSQL initializes with the 26-table schema automatically from `mirror/infrastructure/schemas/axpona-schema.sql`.
+Supabase initializes PostgreSQL with the 26-table schema via migrations in `supabase/migrations/`.
 
 ## Services
 
 | Service | Port | URL | Purpose |
 |---------|------|-----|---------|
-| PostgreSQL | 5440 | `postgresql://localhost:5440/axpona` | Domain model — all 8 bounded contexts |
+| Supabase PostgreSQL | 5440 | `postgresql://localhost:5440/postgres` | Domain model — all 8 bounded contexts + pgvector |
+| Supabase Studio | 5460 | `http://localhost:5460` | Database admin UI (tables, SQL editor) |
+| Supabase REST API | 5450 | `http://localhost:5450` | Auto-generated REST API from schema |
+| Evidence.dev | 3000 | `http://localhost:3000` | Analytics dashboards (16 gold metrics) |
 | Qdrant | 6340 (REST), 6341 (gRPC) | `http://localhost:6340` | Corpus — forum crawls, due diligence, sentiment |
 | Neo4j | 7476 (HTTP), 7689 (Bolt) | `http://localhost:7476` | Domain model graph visualization |
 | Agent Runtime | 8200 | `http://localhost:8200` | Agent execution (38 capabilities) |
@@ -32,8 +43,9 @@ PostgreSQL initializes with the 26-table schema automatically from `mirror/infra
 Start individual services or groups:
 
 ```bash
-docker compose up -d postgres qdrant neo4j    # Data layer only
-docker compose up -d                          # All persistent services
+npx supabase start                            # Supabase (PostgreSQL, Studio, API)
+docker compose up -d                          # Supplementary services (Qdrant, Neo4j)
+cd mirror/application/evidence-app && npm run dev  # Evidence dashboards
 docker compose --profile pipeline run pipeline bronze  # Run pipeline stage
 ```
 
@@ -134,18 +146,67 @@ python scripts/load_axpona_graph.py             # Additive load (merge)
 python scripts/load_axpona_graph.py --dry-run   # Preview without writing
 ```
 
-## PostgreSQL — Domain Model
+## Evidence.dev — Analytics Dashboards
+
+Start the dashboard:
+
+```bash
+cd mirror/application/evidence-app
+npm install    # first time only
+npm run dev    # opens http://localhost:3000
+```
+
+Dashboard pages (organized by analytics pattern):
+
+| Page | Metrics |
+| ---- | ------- |
+| [/](http://localhost:3000/) | Executive summary — revenue, margin, key KPIs |
+| [/exhibitor-retention](http://localhost:3000/exhibitor-retention) | Rebooking rate, net growth, contract value, services attach |
+| [/exhibitors](http://localhost:3000/exhibitors) | Per-exhibitor listing — lifetime revenue, tier, editions attended |
+| [/exhibitors/{id}](http://localhost:3000/exhibitors/ex-001) | Exhibitor detail — revenue trend, spaces, leads, services attach |
+| [/sponsorship-yield](http://localhost:3000/sponsorship-yield) | Fill rate by category, CPM, renewal rate |
+| [/space-utilization](http://localhost:3000/space-utilization) | Revenue per sqft, fill %, listening room premium |
+| [/edition-performance](http://localhost:3000/edition-performance) | P&L, margin, revenue growth YoY |
+| [/attendee-demand](http://localhost:3000/attendee-demand) | Attendee count, ticket ARPU, growth trends |
+| [/lead-effectiveness](http://localhost:3000/lead-effectiveness) | Leads per exhibitor, conversion rates |
+| [/financial-health](http://localhost:3000/financial-health) | Revenue allocation, transaction flow |
+
+Evidence connects directly to Supabase PostgreSQL (port 5440). Configuration: `mirror/application/evidence-app/sources/axpona/connection.yaml`.
+
+For a stakeholder-oriented guide to reading the dashboards and using Neo4j Browser, see [EXPLORATION_GUIDE.md](../mirror/application/EXPLORATION_GUIDE.md).
+
+## Supabase — Data Layer
+
+### PostgreSQL
 
 Connect with any PostgreSQL client:
 
 ```bash
-psql -h localhost -p 5440 -U axpona -d axpona
+psql -h localhost -p 5440 -U postgres -d postgres
 ```
 
-Default credentials (from `.env` or docker-compose defaults):
-- **User:** `axpona`
-- **Password:** `axpona_dev`
-- **Database:** `axpona`
+Default credentials (Supabase local defaults):
+
+- **User:** `postgres`
+- **Password:** `postgres`
+- **Database:** `postgres`
+
+### Studio
+
+Open `http://localhost:5460` for the Supabase Studio UI — table browser, SQL editor, schema visualizer.
+
+### REST API
+
+Supabase auto-generates a REST API from the schema at `http://localhost:5450`. Use the `anon` key from `npx supabase status` to authenticate.
+
+### Schema Migrations
+
+Migrations live in `supabase/migrations/`. To apply:
+
+```bash
+npx supabase db reset    # Reset and apply all migrations + seed
+npx supabase db push     # Apply pending migrations (non-destructive)
+```
 
 ### Key Views (pre-built analytics)
 
@@ -238,8 +299,13 @@ axpona-pr/
 │   │   │   └── process/               # 6 process catalogs (19 processes)
 │   │   └── coherence/                 # Pipeline coherence analysis
 │   ├── application/
-│   │   └── agents/
-│   │       └── prescriptions.yaml     # 7 agent prescriptions from scale gaps
+│   │   ├── agents/
+│   │   │   └── prescriptions.yaml     # 7 agent prescriptions from scale gaps
+│   │   └── evidence-app/              # Evidence.dev dashboards (16 gold metrics)
+│   │       ├── evidence.config.yaml   # Theme, plugins, datasource config
+│   │       ├── package.json           # Dependencies
+│   │       ├── pages/                 # Dashboard pages (markdown + SQL)
+│   │       └── sources/axpona/        # PostgreSQL connection config
 │   ├── infrastructure/
 │   │   ├── schemas/
 │   │   │   └── axpona-schema.sql      # 26 tables, 36 indexes, 8 views
@@ -264,7 +330,10 @@ axpona-pr/
 │   └── session-notes/
 ├── scripts/
 │   └── load_axpona_graph.py           # Load domain model into Neo4j
-├── docker-compose.yaml                # Full agentic stack
+├── supabase/
+│   ├── config.toml                    # Supabase local config
+│   └── migrations/                    # PostgreSQL schema migrations
+├── docker-compose.yaml                # Supplementary services (Qdrant, Neo4j, agents)
 └── CLAUDE.md                          # Claude Code instructions
 ```
 
@@ -287,7 +356,7 @@ cp .env.example .env
 ```
 
 | Variable | Default | Required For |
-|----------|---------|-------------|
-| `POSTGRES_USER` | `axpona` | PostgreSQL |
-| `POSTGRES_PASSWORD` | `axpona_dev` | PostgreSQL |
+| -------- | ------- | ------------ |
 | `ANTHROPIC_API_KEY` | — | Agent Runtime, Pipeline |
+
+Supabase uses its own defaults (`postgres`/`postgres`) managed via `supabase/config.toml`. No `.env` needed for the database.

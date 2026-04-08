@@ -25,7 +25,9 @@ mirror/
 │   └── coherence/                         # Coherence scoring (future)
 │
 ├── application/                           # Client-specific solutions
-│   ├── agents/                            # Agent prescriptions (future)
+│   ├── EXPLORATION_GUIDE.md               # How to use Evidence dashboards + Neo4j Browser
+│   ├── evidence-app/                      # Evidence.dev dashboards (16 gold metrics)
+│   ├── agents/                            # Agent prescriptions
 │   ├── intake/                            # Problem evaluations (future)
 │   └── issues/                            # Engagement issue tracking (future)
 │
@@ -71,11 +73,13 @@ mirror/
 | File | Purpose |
 |------|---------|
 | [manifest.yaml](manifest.yaml) | Mirror declaration — target org, system classification, layer refs |
+| [application/EXPLORATION_GUIDE.md](application/EXPLORATION_GUIDE.md) | How to use Evidence dashboards and Neo4j Browser |
+| [application/evidence-app/](application/evidence-app/) | Evidence.dev dashboards — 8 pages, 16 gold metrics |
 | [domain/outside-in/strategic-ddd.md](domain/outside-in/strategic-ddd.md) | 8 bounded contexts for trade show operations |
 | [infrastructure/data/sources.json](infrastructure/data/sources.json) | 29 crawl targets with signal_source, tags, pagination config |
 | [infrastructure/data/staging/sentiment-extraction.json](infrastructure/data/staging/sentiment-extraction.json) | 202 community sentiment records from 13 forum threads |
 | [infrastructure/data/marts/business-model-synthesis.yaml](infrastructure/data/marts/business-model-synthesis.yaml) | Structured business model analysis |
-| [infrastructure/schemas/axpona-schema.sql](infrastructure/schemas/axpona-schema.sql) | Canonical dimensional model |
+| [infrastructure/schemas/axpona-schema.sql](infrastructure/schemas/axpona-schema.sql) | Canonical dimensional model (SQLite — see supabase/migrations/ for PostgreSQL) |
 
 ## Reference
 

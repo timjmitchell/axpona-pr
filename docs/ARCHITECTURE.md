@@ -3,8 +3,8 @@
 > **Repo:** `axpona-pr`
 > **Role:** SemOps Deployment / Consulting Engagement — Trade show operations and exhibitor lifecycle management
 > **Status:** ACTIVE
-> **Version:** 1.0.0
-> **Last Updated:** 2026-04-02
+> **Version:** 1.1.0
+> **Last Updated:** 2026-04-08
 
 ## Role
 
@@ -42,6 +42,8 @@
 | Capability | Status | Description |
 |------------|--------|-------------|
 | Outside-In Pipeline | active | Signal collection, corpus building, structured extraction |
+| Presentation Layer | active | Evidence.dev dashboards — 16 gold metrics across 7 analytics patterns |
+| Data Backend | active | Supabase (PostgreSQL 17 + pgvector + REST API + Studio) |
 
 ## Ownership
 
@@ -62,7 +64,7 @@ What this repo consumes:
 | Layer | Directory | Purpose |
 |-------|-----------|---------|
 | Domain | `mirror/domain/` | Business architecture — strategic DDD, UL, business model |
-| Application | `mirror/application/` | Client-specific solutions — agents, intake, issues |
+| Application | `mirror/application/` | Client-specific solutions — agents, Evidence dashboards, exploration guide |
 | Infrastructure | `mirror/infrastructure/` | Data pipeline — medallion layers, schemas, corpus |
 | Presentation | `mirror/presentation/` | Client-facing deliverables — diagrams, gap analysis |
 
@@ -112,6 +114,7 @@ This repo follows the consulting deployment pattern — it is a leaf node with n
 
 - [GLOBAL_ARCHITECTURE.md](https://github.com/timjmitchell/dx-hub-pr/blob/main/docs/GLOBAL_ARCHITECTURE.md) - System landscape
 - [REPOS.yaml](https://github.com/timjmitchell/dx-hub-pr/blob/main/config/repos.yaml) - Structured repo registry
+- [ADR-0001: Supabase + Evidence.dev Stack](docs/decisions/ADR-0001-supabase-evidence-presentation-stack.md) - Data backend + presentation layer
 - [ADR-0008: Consulting Deployment Pattern](https://github.com/timjmitchell/dx-hub-pr/blob/main/docs/decisions/ADR-0008-consulting-deployment-pattern.md)
 - [DD-0002: Consulting Deployment Pattern](https://github.com/timjmitchell/dx-hub-pr/blob/main/docs/design-docs/DD-0002-consulting-deployment-pattern.md)
 - `docs/decisions/` - Architecture Decision Records for this repo
