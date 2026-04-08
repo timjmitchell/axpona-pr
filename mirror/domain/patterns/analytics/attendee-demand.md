@@ -19,6 +19,11 @@ Lightweight demand-side analytics for a SUPPORTING context. Attendee retention (
 | **ticket_arpu** | ticket_revenue / attendee_count | edition | per-edition |
 | **check_in_rate** | checked_in / registered | edition | per-edition |
 | **ticket_type_mix** | COUNT per type / total | edition, ticket_type | per-edition |
+| **attendee_growth_yoy** | (current - prior) / prior | edition | per-edition |
+| **trade_pass_growth** | YoY % change WHERE ticket_type = 'trade_pass' | edition | per-edition |
+| **re_registration_rate** | COUNT(prior_edition_attended) / COUNT(*) | edition | per-edition |
+
+*Trade pass growth and re-registration rate sourced from `analytics/domain/event-management.yaml` (attendee-engagement pattern).*
 
 ## Benchmarks
 

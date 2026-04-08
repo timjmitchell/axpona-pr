@@ -8,5 +8,20 @@
 | [sponsorship-yield](sponsorship-yield.md) | Sponsorship | CORE | Descriptive → Prescriptive | Fill rate, CPM equivalent |
 | [space-utilization](space-utilization.md) | Exhibition Space | CORE | Descriptive → Prescriptive | Revenue per sqft ($110) |
 | [edition-performance](edition-performance.md) | Event | CORE | Descriptive → Diagnostic | EBITDA margin (36%) |
-| [attendee-demand](attendee-demand.md) | Attendee | SUPPORTING | Descriptive | Attendance count |
-| [lead-effectiveness](lead-effectiveness.md) | Interaction | SUPPORTING | Descriptive | Leads per exhibitor |
+| [attendee-demand](attendee-demand.md) | Attendee | SUPPORTING | Descriptive | Attendance, trade pass growth |
+| [lead-effectiveness](lead-effectiveness.md) | Interaction | SUPPORTING | Descriptive | Leads per exhibitor, conversion |
+| [financial-health](financial-health.md) | Finance | GENERIC | Descriptive | AR aging, cash velocity |
+
+## Domain Pattern Files
+
+Domain patterns live alongside this directory in `mirror/domain/patterns/`:
+
+| Pattern | Context | Type |
+|---------|---------|------|
+| [exhibitor-lifecycle-management](../exhibitor-lifecycle-management.md) | Exhibitor | CORE |
+| [sponsorship-inventory-and-yield](../sponsorship-inventory-and-yield.md) | Sponsorship | CORE |
+| [exhibition-space-optimization](../exhibition-space-optimization.md) | Exhibition Space | CORE |
+| [event-edition-lifecycle](../event-edition-lifecycle.md) | Event | CORE |
+| [attendee-registration](../attendee-registration.md) | Attendee | SUPPORTING |
+| [lead-capture-and-delivery](../lead-capture-and-delivery.md) | Interaction | SUPPORTING |
+| [contract-and-financial-management](../contract-and-financial-management.md) | Agreement + Finance | GENERIC |

@@ -17,6 +17,9 @@ Lightweight measurement of lead capture effectiveness — a SUPPORTING context s
 |--------|---------|------------|---------|
 | **leads_per_exhibitor** | total_leads / exhibitors_with_lead_retrieval | edition | per-edition |
 | **lead_retrieval_adoption** | exhibitors_with_license / total_exhibitors | edition | per-edition |
+| **lead_to_conversion_rate** | COUNT(converted) / COUNT(captured) | edition, exhibitor | per-edition |
+
+*Lead-to-conversion rate sourced from `analytics/domain/event-management.yaml` (lead-capture-roi pattern).*
 
 ## Benchmarks
 
@@ -24,11 +27,13 @@ Lightweight measurement of lead capture effectiveness — a SUPPORTING context s
 |---------|--------|--------|
 | Leads per exhibitor | > 50 per show | Meaningful ROI data |
 | Adoption rate | >= 30% | Service is valued |
+| Lead-to-conversion | > 5% post-show | B2B event industry benchmark |
 
 ## Capabilities
 
 - lead-volume-tracking
 - lead-service-adoption-analysis
+- lead-to-conversion-rate-tracking
 
 ## Feedback Loop
 

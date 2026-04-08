@@ -20,12 +20,21 @@ patterns:
     ddd_type: CORE
     status: planned
     derives_from: null  # engagement-specific — no global pattern
+    catalog_sources:
+      - "decompositions/salesforce-crm.yaml (CRM primitives)"
+      - "analytics/domain/event-management.yaml (exhibitor-lifecycle)"
     capabilities:
       - exhibitor-onboarding
       - exhibitor-pipeline-tracking
       - exhibitor-rebooking-processing
       - exhibitor-priority-points-management
       - exhibitor-package-assembly
+      # CRM primitives (from salesforce-crm.yaml decomposition)
+      - contact-management                # Accounts & Contacts → exhibitor records
+      - sales-pipeline-stage-tracking     # Opportunities → exhibitor lifecycle states
+      - activity-logging                  # Activity Timeline → interaction history with exhibitors
+      - sales-forecasting                 # Forecasts → next-edition revenue projection from pipeline
+      - lead-qualification                # Leads → new exhibitor prospect qualification
       - name: edition-lifecycle-exhibitor-coordination
         coordination_type: saga
         trigger: EditionPlanned
@@ -116,10 +125,16 @@ patterns:
     ddd_type: GENERIC
     status: planned
     derives_from: null
+    catalog_sources:
+      - "decompositions/netsuite-erp.yaml (AR/AP primitives)"
     capabilities:
       - agreement-activation
       - edition-revenue-allocation
       - invoicing-and-payment-processing
+      # AR primitives (from netsuite-erp.yaml — adapted for <$5M scale)
+      - accounts-receivable-aging          # AR aging → exhibitor/sponsor payment tracking
+      - cash-collection-velocity-tracking  # Payment application → "50%+ within 4 months" metric
+      - dunning-and-collections            # Collections workflow → overdue exhibitor follow-up
 
   # ============================================================
   # ANALYTICS PATTERNS (6)
@@ -171,18 +186,41 @@ patterns:
     contexts: [attendee, finance]
     measures: [attendee-registration]
     status: planned
+    catalog_sources:
+      - "analytics/domain/event-management.yaml (attendee-engagement)"
     capabilities:
       - attendance-tracking
       - ticket-mix-analysis
+      # From event-management catalog
+      - attendee-growth-yoy-analysis       # YoY attendance trend
+      - trade-pass-growth-tracking         # B2B engagement health signal (20% surge in 2025)
+      - re-registration-rate-monitoring    # Confirm 15% stays stable
 
   - id: lead-effectiveness-analytics
     type: analytics
     contexts: [interaction, exhibitor]
     measures: [lead-capture-and-delivery]
     status: planned
+    catalog_sources:
+      - "analytics/domain/event-management.yaml (lead-capture-roi)"
     capabilities:
       - lead-volume-tracking
       - lead-service-adoption-analysis
+      # From event-management catalog
+      - lead-to-conversion-rate-tracking   # >5% post-show conversion benchmark
+
+  - id: financial-health-analytics
+    type: analytics
+    contexts: [finance, exhibitor, sponsorship]
+    measures: [contract-and-financial-management]
+    status: planned
+    catalog_sources:
+      - "decompositions/netsuite-erp.yaml (AR primitives)"
+      - "analytics/business-model/project-bid-based.yaml (project margin)"
+    capabilities:
+      - ar-aging-analysis                  # Exhibitor/sponsor payment aging
+      - cash-collection-velocity-tracking  # "50%+ within 4 months" — confirmed from OM
+      - revenue-concentration-analysis     # Top-10 exhibitor revenue share (concentration risk)
 
   # ============================================================
   # GOAL PATTERNS (3)
@@ -243,16 +281,19 @@ patterns:
 
 gaps:
   - context: agreement
-    note: "GENERIC — no dedicated analytics. Contract data flows to Finance for revenue allocation."
-  - context: finance
-    note: "GENERIC — edition P&L covered by edition-performance-analytics. No dedicated finance analytics needed at <$5M."
+    note: "GENERIC — no dedicated analytics. Contract data flows to Finance via financial-health-analytics."
 
 summary:
-  total_patterns: 16
+  total_patterns: 17
   pattern_types:
     domain: 7
-    analytics: 6
+    analytics: 7
     goal: 3
-  total_capabilities: 58
-  contexts_with_full_coverage: 6  # all CORE + attendee + interaction
-  contexts_with_gaps: 2           # agreement, finance (GENERIC — acceptable)
+  total_capabilities: 72
+  contexts_with_full_coverage: 8  # all contexts now have pattern + analytics coverage
+  contexts_with_gaps: 0
+  catalog_sources_consumed:
+    - "decompositions/salesforce-crm.yaml — CRM primitives for exhibitor lifecycle"
+    - "decompositions/netsuite-erp.yaml — AR/AP primitives for financial health"
+    - "analytics/domain/event-management.yaml — trade pass growth, lead-to-conversion, attendee engagement"
+    - "analytics/business-model/project-bid-based.yaml — project margin patterns"
