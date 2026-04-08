@@ -1,0 +1,62 @@
+# Domain Layer Manifest — AXPONA Mirror
+# Raw ingested data (bronze). Contains crawled markdown and source declarations.
+# DDD analog: Domain events and raw facts — data as captured, no transformation.
+#
+# Related: data-architecture-spec.md Section 1 (Source Systems)
+
+layer: domain
+description: >
+  Raw data sources crawled from public signals. Contains verbatim markdown
+  captures of AXPONA's website pages and community forum threads, plus the
+  source manifest that declares crawl targets and signal metadata.
+
+status: active
+
+# Source manifest — declares what to crawl and how
+source_manifest: sources.json
+
+# Ingestion rules
+ingestion:
+  format: markdown
+  naming: "{source_type}-{slug}-raw.md"
+  dedup: by_url
+  notes: >
+    Raw files are verbatim Crawl4AI/Playwright captures. No transformation
+    applied — content is stored exactly as crawled. Source reliability scores
+    in sources.json guide downstream extraction confidence.
+
+# Contents inventory
+contents:
+  source_declaration:
+    - sources.json                    # 29 crawl targets with signal_source, tags, reliability
+
+  website_pages:
+    - demographics-raw.md             # Attendee demographics and show statistics
+    - exhibitor-directory-raw.md      # Full exhibitor directory (700+ brands)
+    - exhibitor-spaces-raw.md         # Space types, pricing, floor plan info
+    - sponsorship-inventory-raw.md    # 40+ sponsorship items across 6 categories
+    - ticket-pricing-raw.md           # 6 ticket types, $15–$150
+
+  forum_threads:
+    - forum-crawl-research.md                                            # Forum source research and assessment
+    - forum-axpona-2025.1222046-raw.md                                   # ASR forum thread
+    - forum-axpona-2025-report.26607-raw.md                              # Steve Huff report
+    - forum-axpona-2025-report.41089-raw.md                              # WBF report
+    - forum-axpona-and-eargear-2025-april-11-13-schaumburg-illinois.976367-raw.md  # Head-Fi thread
+    - forum-axpona-2025-eargear-impressions-thread.976566-raw.md         # Ear Gear impressions
+    - forum-axpona-room-agenda-and-report.1199508-raw.md                 # SBAF room agenda
+    - forum-favorite-axpona-rooms.1199598-raw.md                         # SBAF favorites
+    - forum-6c72868eeca4-raw.md                                          # Audiophile Style thread
+    - forum-d3a144ec88ef-raw.md                                          # Audiophile Style thread
+    - forum-thoughts-and-reflections-on-axpona-2025.40730-raw.md         # WBF reflections
+    - forum-my-experience-at-a-hifi-audio-convention-axpona-2025.426344-raw.md  # Reddit experience
+    - forum-favorite-room-raw.md                                         # Favorite room discussion
+    - forum-tariff-panic-raw.md                                          # Tariff impact discussion
+
+# Signal source distribution
+signal_sources:
+  pricing_page: 3       # exhibitor spaces, sponsorship, tickets
+  marketing: 7          # homepage, about, attend, exhibit, etc.
+  community_forum: 13   # ASR, Head-Fi, WBF, SBAF, Reddit, Audiophile Style
+  industry_report: 3    # demographics, exhibitor directory, press
+  regulatory: 3         # terms of service, privacy, accessibility

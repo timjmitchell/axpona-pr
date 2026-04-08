@@ -1,0 +1,217 @@
+business_model_synthesis:
+  company: AXPONA (JD Events LLC)
+  classification_inputs:
+    customer_type: b2b2c
+    business_model: [marketplace (0.6), advertising (0.25), project (0.15)]
+    revenue_streams: [space_sales, services, sign_up, sponsorship, subscription]
+    arv_stage: "$5M-$20M"
+
+  revenue_streams:
+    - type: space_sales
+      weight: primary
+      mechanics: >
+        Exhibitors pay $1,500-$5,250 per space unit (5 types: listening rooms,
+        expo hall, Ear Gear, Car Audio, ALTI Pavilion). 220+ rooms + expo hall
+        booths. Revenue recognized per edition. Rebooking cycle creates
+        predictable pipeline — priority points reward loyalty.
+      constraint_on_data: >
+        Floor plan optimization (space utilization, revenue per sqft), exhibitor
+        pipeline management (prospect → contracted → rebooked), and inventory
+        management (available vs reserved vs sold). The data system must track
+        space assignment lifecycle and exhibitor relationship history.
+
+    - type: services
+      weight: growing
+      mechanics: >
+        Upsold to exhibitors: drayage, electrical, AV, furniture, lead retrieval
+        licenses, matchmaking, analytics dashboards. Physical services are
+        low-margin pass-through via general service contractors. Digital services
+        (lead retrieval, matchmaking, analytics) are high-margin and
+        organizer-owned. Industry trend: moving from "booth price" to
+        "marketing objectives" with bundled packages.
+      constraint_on_data: >
+        Services attach rate tracking (services revenue / space revenue),
+        package vs a-la-carte ratio, and per-exhibitor upsell history. Digital
+        services generate lead data that feeds back into exhibitor ROI reporting.
+
+    - type: sign_up
+      weight: secondary
+      mechanics: >
+        Attendee tickets: 6 types from $15 (Gen-Z) to $150 (Gold Pass VIP).
+        10,910 attendees in 2025 (5% YoY growth). Pre-registration vs walk-up
+        dual pricing channel. Trade Pass ($80) segments B2B attendees.
+      constraint_on_data: >
+        Registration funnel (started → completed → checked-in), ticket type
+        mix analysis, returning attendee tracking, and demographic segmentation.
+        Attendee data is the proof-of-value for exhibitor sales pitches.
+
+    - type: sponsorship
+      weight: high_margin
+      mechanics: >
+        40+ items across 6 categories ($500-$12,000). Sold as packages with
+        exclusivity options. Heavy "SOLD" markers on premium inventory indicate
+        demand exceeds supply. Same sales team manages both exhibitor and
+        sponsorship relationships (Mark Freed, Ryan Pearson).
+      constraint_on_data: >
+        Sponsorship inventory management (available/sold/renewed), deliverable
+        tracking (contracted → produced → delivered → verified), renewal rate,
+        and CPM-equivalent yield analysis. Premium inventory sell-through
+        rate is a pricing power indicator.
+
+    - type: subscription
+      weight: emerging
+      mechanics: >
+        Early signals: Audio Insider Podcast (year-round content), ALTI
+        Pavilion (B2B networking). At AXPONA's scale, subscription revenue
+        is likely minimal. Larger organizers are building 365-day platforms.
+        Represents a future domain context candidate.
+      constraint_on_data: >
+        Year-round engagement metrics, community membership, content
+        consumption. Not yet material enough to require dedicated data
+        infrastructure.
+
+  competitive_moat: >
+    Niche monopoly in audiophile trade shows. AXPONA is North America's
+    largest consumer audio show — there is no direct competitor at comparable
+    scale in this vertical. The moat is built on three pillars:
+    (1) Exhibitor network effects — 700+ brands creates the definitive
+    annual gathering; exhibitors attend because attendees attend, and vice
+    versa. (2) 24-year track record — JD Events has operated since 2002;
+    trust and relationships with audio manufacturers compound over time.
+    (3) Niche depth — the listening room format (private demo rooms, not
+    just expo booths) is specific to high-fidelity audio and creates an
+    experience that generic trade show organizers cannot replicate.
+
+  hard_problem: >
+    Exhibitor lifecycle management. The ceiling-setter for this business
+    is the ability to fill the floor, retain exhibitors year-over-year,
+    and grow services attach rate. If exhibitor rebooking rate drops,
+    space revenue drops, sponsorship inventory loses value (fewer
+    exhibitors = smaller audience), and attendee draw weakens. The
+    rebooking rate within 30 days of show close is the single most
+    important leading indicator. Unlike a tech company where the hard
+    problem is algorithmic, here the hard problem is relationship +
+    operations: managing a complex, annual, multi-stakeholder project
+    cycle where the product is an experience that cannot be A/B tested.
+
+  core_domain_rationale:
+    Exhibitor:
+      type: CORE
+      rationale: >
+        Supply side of the marketplace. Exhibitor acquisition, retention,
+        and upsell directly determine 70-80% of revenue. The exhibitor
+        lifecycle (prospect → contracted → confirmed → attended → rebooked)
+        is where competitive advantage compounds. Rebooking rate is the
+        single most important metric. A competitor cannot replicate 700+
+        established exhibitor relationships in 12 months.
+
+    Sponsorship:
+      type: CORE
+      rationale: >
+        Highest-margin revenue stream. 40+ granular products with demand
+        exceeding supply on premium inventory. Sponsorship revenue is
+        pure margin — no COGS on signage placement or digital ad space.
+        The depth of the sponsorship catalog (6 categories, granular
+        pricing) indicates this is a mature, actively managed product
+        line, not an afterthought. Competitor replication requires the
+        same audience scale to offer equivalent value.
+
+    Exhibition Space:
+      type: CORE
+      rationale: >
+        The physical product. 5 distinct space types reflect deep
+        understanding of exhibitor needs by segment (room-based listening
+        for speakers/amps vs expo hall for accessories vs Ear Gear for
+        headphones). Floor plan optimization directly affects revenue per
+        square foot. The listening room format is AXPONA-specific — a
+        generic trade show organizer would not know how to configure
+        audio demo spaces.
+
+    Event:
+      type: CORE
+      rationale: >
+        The project container. Each edition is a discrete project with
+        its own P&L, venue logistics, programming (sessions, concerts,
+        Record Fair), and multi-stakeholder coordination. Event execution
+        quality determines attendee satisfaction, which feeds exhibitor
+        perceived value, which drives rebooking. The 17-year track
+        record of successful editions is itself the proof of execution
+        capability.
+
+    Attendee:
+      type: SUPPORTING
+      rationale: >
+        Demand side of the marketplace. Necessary and valuable, but
+        attendee management is a solved problem — registration, ticketing,
+        badge printing are commodity operations handled by Unity Event
+        Solutions (external vendor). AXPONA differentiates on what
+        attendees experience, not on how they register. The 6 ticket
+        types and Gen-Z pricing show strategic thinking, but execution
+        is standard.
+
+    Interaction:
+      type: SUPPORTING
+      rationale: >
+        Lead capture and matchmaking are value-adds for exhibitors but
+        not where AXPONA's competitive advantage lives. Lead retrieval
+        is sold as a service (revenue) but the technology is commodity
+        (badge scanning hardware + vendor software). Matchmaking is
+        emerging but not yet a core differentiator.
+
+    Agreement:
+      type: GENERIC
+      rationale: >
+        Contract management for exhibitor agreements and sponsorship
+        contracts. Standard document workflow — DocuSign, PandaDoc, or
+        equivalent. No competitive advantage from how contracts are
+        managed.
+
+    Finance:
+      type: GENERIC
+      rationale: >
+        Payment processing and accounting. Stripe + QuickBooks (or
+        equivalent). Standard financial operations at this scale.
+
+  system_mix_rationale:
+    divergence_from_generic: >
+      The events_project baseline (20% App / 40% Work / 15% Analytics /
+      25% Record) is appropriate. Unlike SaaS companies where Application
+      dominates, AXPONA's value creation happens in Work systems —
+      logistics coordination, vendor management, floor plan planning,
+      and multi-stakeholder project execution. The elevated Record
+      component (25%) reflects the importance of contracts, exhibitor
+      history, and financial records as authoritative business facts.
+    predicted_mix:
+      application: 20%   # Registration portals, exhibitor portals, badge scanning
+      analytics: 15%     # Post-show reporting, exhibitor ROI, attendance trends
+      work: 40%          # Event planning, logistics, vendor coordination, floor plan mgmt
+      record: 25%        # Contracts, invoices, exhibitor history, compliance docs
+
+  priority_metrics:
+    - metric: Exhibitor rebooking rate (within 30 days of show close)
+      rationale: >
+        The single most important leading indicator. Predicts next-year
+        space revenue, which drives 60%+ of total revenue. If this drops,
+        everything downstream follows.
+    - metric: Floor plan fill percentage (at T-90 days)
+      rationale: >
+        Leading indicator of show quality and revenue capacity. High fill
+        early = pricing power; low fill late = discounting risk.
+    - metric: Sponsorship sell-through rate
+      rationale: >
+        Premium inventory demand vs supply. Heavy "SOLD" markers indicate
+        pricing power. If sell-through drops, margin structure is at risk.
+    - metric: Attendee growth (YoY)
+      rationale: >
+        Demand-side health of the marketplace. 5% YoY growth (2025) is
+        healthy. Stagnation would signal audience fatigue.
+    - metric: Services attach rate (services revenue / space revenue)
+      rationale: >
+        Industry growth vector. Moving from "booth price" to "marketing
+        objectives" with bundled packages. Higher attach = higher ARPU
+        per exhibitor and better margin mix.
+    - metric: Trade Pass growth rate
+      rationale: >
+        B2B engagement proxy. 20% YoY surge (2025) indicates industry
+        professionals see increasing value. This audience segment is
+        highest-value to exhibitors.
