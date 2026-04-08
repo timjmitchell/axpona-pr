@@ -1,7 +1,7 @@
 # Issue #4: Evidence app: presentation layer for 16 gold metrics
 
 > **Issue:** [axpona-pr#4](https://github.com/timjmitchell/axpona-pr/issues/4)
-> **Status:** In Progress
+> **Status:** Complete
 
 ## 2026-04-08
 <!-- @appended by /issue on 2026-04-08T00:00:00Z -->
