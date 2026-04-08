@@ -330,6 +330,107 @@ prescriptions:
       - venue-coordination (secondary — playbook includes venue coordination procedures)
 
   # ============================================================
+  # PHASE S: STRATEGIC RESEARCH
+  # Agents that discover and analyze structural peers by running
+  # the SemOps pipeline against candidate companies. Unlike
+  # operational agents (triggered by domain events), research
+  # agents are human-invoked and learn through iteration.
+  # ============================================================
+
+  - id: rx-peer-discovery
+    type: research-agent
+    phase: S
+    capability: competitive-comparative-analysis
+    context: [event, market-analysis]
+    pattern: three-layer-strategic-analysis
+    cognitive_load: judgment
+    current_state: "manual — peer identification done through iterative human-agent research sessions (see show-timing-location-research.md)"
+    target_state: "agent-assisted — agent discovers and validates peers from baseline, human curates results"
+
+    description: >
+      Given the AXPONA baseline (classification, reference model, synthesis),
+      discover structurally similar companies across verticals, validate them,
+      and produce comparable baselines. This is the first step toward automated
+      competitive/comparative analysis. Structural analogs share business model
+      primitives (two-sided marketplace, enthusiast community, annual edition
+      cycle) rather than vertical — Blade Show (knives), Fretboard Summit
+      (guitars), GABF (beer) are closer analogs to AXPONA than CES or SEMA.
+      The search strategy and validation criteria improve over iterations
+      via agent-training.
+
+    architecture:
+      trigger: "CLI invocation with baseline reference"
+      input:
+        - "AXPONA baseline artifacts (classification.yaml, reference-model.yaml, business-model.yaml)"
+        - "mirror/manifest.yaml (system classification, scale indicators, revenue model)"
+        - "mirror/domain/outside-in/business-model-synthesis.md (domain typing, investment thesis)"
+      processing:
+        - phase: A-extract
+          description: >
+            Extract search criteria from baseline — business model primitives
+            (two-sided marketplace, enthusiast community, annual edition cycle),
+            revenue model shape (marketplace 0.6 + advertising/sponsorship 0.25
+            + project 0.15), scale indicators (700 exhibitors, 10K attendees,
+            3-person ops team), system classification (Work-dominant 0.40),
+            domain characteristics (boutique, craftsman-community, geographic
+            anchoring). These become the search strategy.
+        - phase: B-discover
+          description: >
+            Search outward from extracted criteria to find candidate companies.
+            Not the same as /recon (which takes a known company and finds its
+            signals) — this searches from structural attributes across verticals.
+            Web research for boutique enthusiast trade shows, craftsman-community
+            events, exhibitor-funded models under 15K attendees.
+        - phase: C-validate
+          description: >
+            For each candidate, run lightweight /classify to check structural
+            fit against the AXPONA baseline. Score structural similarity on
+            key dimensions (business model, revenue model, scale, community
+            dynamics). Filter false comparisons — CES and SEMA are structural
+            comparisons only (scale mismatch), while Blade Show and Fretboard
+            Summit are true analogs (same business model primitives at similar
+            scale).
+        - phase: D-baseline
+          description: >
+            For validated peers, run /classify → /predict (and optionally /recon)
+            to produce structured baseline artifacts. Package into comparable
+            format alongside AXPONA baseline for cross-company analysis.
+      output: "Peer candidate list with structural similarity scores + baseline artifacts for validated peers"
+      model: "claude-sonnet (reasoning over business model structures + web research)"
+      estimated_cost: "~$5-15 per research session (web research + multi-turn reasoning)"
+
+    learning:
+      method: agent-training
+      what_improves:
+        - "Which baseline attributes are predictive of structural similarity"
+        - "Which search queries find real analogs vs. noise"
+        - "What the quick-validation threshold should be for /classify fit"
+        - "How deep to go on each peer (classify-only vs. classify+predict vs. full recon)"
+      notes: >
+        This is not a one-shot design. The first iterations will be manual
+        (human runs phases A-D, agent-training captures what worked). Over
+        time the agent takes on more of the discovery and validation, with
+        human curating results.
+
+    phased_rollout:
+      - phase: manual-iteration
+        description: "Run phases A-D manually 2-3 times. Collect training data on search strategies and validation criteria that work."
+        duration: "2-3 research sessions"
+        validation: "Discovered peers match quality of manually-identified peer set from show-timing-location-research.md (14 boutique craftsman shows)"
+      - phase: agent-assisted
+        description: "Agent runs discovery and validation. Human curates peer set and steers search direction."
+        duration: ongoing
+        validation: "Agent finds ≥80% of peers that human would have identified. False positive rate <30%."
+      - phase: comparative-analysis
+        description: "Cross-baseline queries become possible — structural patterns, gaps, and analogs are queryable. (Future issue, downstream of this.)"
+        duration: future
+        validation: "Comparative analysis deliverable quality approaches show-timing-location-research.md"
+
+    capabilities_unlocked:
+      - competitive-comparative-analysis (primary)
+      - peer-group-identification (secondary — structural similarity scoring identifies true analogs vs. false comparisons)
+
+  # ============================================================
   # PHASE 0: INFRASTRUCTURE (Before Phase 1)
   # Non-agent items that unblock everything else.
   # ============================================================
@@ -384,16 +485,18 @@ prescriptions:
 # ============================================================
 
 summary:
-  total_prescriptions: 7
+  total_prescriptions: 8
   by_phase:
     phase_0_infrastructure: 2
     phase_1_knowledge_extraction: 2
     phase_2_domain_formalization: 2
     phase_3_operational_augmentation: 1
+    phase_S_strategic_research: 1
   by_type:
     agent: 5
     infrastructure: 2
-  estimated_total_cost: "~$70/edition for agent compute + engineering time for infrastructure"
-  capabilities_unlocked: 12
+    research-agent: 1
+  estimated_total_cost: "~$70/edition for agent compute + ~$15/research session + engineering time for infrastructure"
+  capabilities_unlocked: 14
   knowledge_extraction_interviews: 7
   corpus_documents_to_produce: 11
