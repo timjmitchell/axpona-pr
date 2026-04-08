@@ -45,11 +45,13 @@ pipeline:
   tier3_sentiment:
     output: sentiment-extraction.json
     description: >
-      Community sentiment extraction from 13 forum threads. 202 deduplicated
+      Community sentiment extraction from 13 forum threads. 653 deduplicated
       records with sentiment polarity, topics, and source attribution.
+      Updated 2026-04-08 via extract_sentiment.py pipeline.
     model: claude-sonnet-4-20250514
+    pipeline_script: pre-pipeline/scripts/extract_sentiment.py
     source_files:
-      - ../domain/forum-*-raw.md
+      - ../../pre-pipeline/bronze/forums/*.md
 
 # Validation rules
 validation:
@@ -70,4 +72,4 @@ contents:
   - structured-extraction.json    # Tier 1 regex: spaces, sponsorship, tickets, demographics
   - enriched-extraction.json      # Tier 2 Ollama: enriched entities with classification
   - exhibitor-extraction-test.json  # Tier 2 test: exhibitor directory subset
-  - sentiment-extraction.json     # Tier 3 Claude: 202 forum sentiment records
+  - sentiment-extraction.json     # Tier 3 Claude: 653 forum sentiment records (updated 2026-04-08)

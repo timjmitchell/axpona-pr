@@ -26,5 +26,5 @@ Structured data extracted from domain-layer raw sources via the three-tier extra
 | `structured-extraction.json` | Tier 1 regex | Spaces, sponsorship, tickets, demographics |
 | `enriched-extraction.json` | Tier 2 Ollama | Entity classification and relationship detection |
 | `exhibitor-extraction-test.json` | Tier 2 test | Exhibitor directory subset (validation run) |
-| `sentiment-extraction.json` | Tier 3 Claude | 202 forum sentiment records from 13 threads |
+| `sentiment-extraction.json` | Tier 3 Claude | 653 forum sentiment records from 13 threads (updated 2026-04-08) |
 | `manifest.yaml` | — | Layer manifest with pipeline and validation rules |
