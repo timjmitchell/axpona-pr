@@ -41,76 +41,87 @@ docker compose --profile pipeline run pipeline bronze  # Run pipeline stage
 
 Open `http://localhost:7476` after loading the graph. No authentication required.
 
-### Useful Queries
+### Graph Contents
+
+The graph is loaded from 4 YAML sources by `scripts/load_axpona_graph.py`:
+
+| Source | What It Creates |
+|--------|----------------|
+| `business-model.yaml` | 8 BoundedContext nodes with weight + domain typing |
+| `registry.yaml` | 17 Pattern nodes, 72 Capability nodes, 3 Goal nodes + hierarchy edges |
+| `system-inventory.yaml` | 7 System nodes + SERVES edges to contexts |
+| `graph.yaml` | 37 typed edges: context map, value stream flow, event→metric, prescription→capability, corpus→context |
+
+### Cypher Query Library
+
+Two pre-built query files are available in `scripts/cypher/`. Open Neo4j Browser and paste any query block.
+
+**[explore-axpona.cypher](../scripts/cypher/explore-axpona.cypher)** — Domain model exploration (11 queries):
+
+| # | Query | What You See |
+|---|-------|-------------|
+| 1 | All bounded contexts | 8 context nodes with weight, domain typing |
+| 2 | Context map | How contexts interact (Customer-Supplier, Shared Kernel, ACL, Published Language) |
+| 3 | Context drill-down | Single context → its patterns → their capabilities (change context ID) |
+| 4 | CORE hierarchy | Only CORE contexts with patterns and systems |
+| 5 | Systems | Which systems serve which contexts |
+| 6 | Analytics → Domain | Measurement dependency chain (which analytics measure which domain patterns) |
+| 7 | Goals | Goal patterns and what they target/measure |
+| 8 | Process capabilities | Coordination points (sagas, services) with cognitive load metadata |
+| 9 | Weight ranking | Table view of contexts ranked by business importance |
+| 10 | Single context deep dive | Everything connected to one context (change ID to explore) |
+| 11 | Full graph | All nodes and relationships (limited to 100 for readability) |
+
+**[graph-traversal.cypher](../scripts/cypher/graph-traversal.cypher)** — Domain relationship traversal (11 queries):
+
+| # | Query | What You See |
+|---|-------|-------------|
+| 1 | Value stream flow | Plan → Sell → Market → Execute → Retain (annual edition cycle) |
+| 2 | Events → Metrics | Which domain events produce which gold-layer metrics |
+| 3 | Agent prescriptions | Which capabilities each prescription unlocks |
+| 4 | Corpus → Context | What knowledge sources feed each bounded context |
+| 5 | Rebooking chain | EventConcluded through rebooking metrics + prescription |
+| 6 | Exhibitor intelligence | All signals feeding the exhibitor context |
+| 7 | Sponsorship yield chain | Goal → domain pattern → analytics pattern |
+| 8 | Scale projection | Full chain: prescription → capability → pattern → context |
+| 9 | Knowledge extraction map | What corpus sources and contexts each prescription connects to |
+| 10 | Revenue chain | How space revenue flows through exhibitor to finance |
+| 11 | All graph edges | Domain relationships from graph.yaml (excluding pattern hierarchy) |
+
+### Quick Start Queries
+
+Paste these directly into Neo4j Browser:
 
 **See everything:**
 ```cypher
 MATCH (n) RETURN n LIMIT 200
 ```
 
-**Bounded contexts with domain typing:**
+**Context map — the architecture at a glance:**
 ```cypher
-MATCH (n:BoundedContext) RETURN n ORDER BY n.weight DESC
-```
-
-**Context map — how contexts interact:**
-```cypher
-MATCH (a:BoundedContext)-[r]->(b:BoundedContext)
-RETURN a, r, b
+MATCH (a:BoundedContext)-[r]->(b:BoundedContext) RETURN a, r, b
 ```
 
 **Full pattern chain (context → pattern → capability):**
 ```cypher
-MATCH (c:BoundedContext)-[:IMPLEMENTS]->(p:Pattern)-[:DELIVERS]->(cap:Capability)
-RETURN c, p, cap
-```
-
-**CORE contexts only:**
-```cypher
-MATCH (c:BoundedContext {ddd_type: 'CORE'})-[:IMPLEMENTS]->(p:Pattern)-[:DELIVERS]->(cap:Capability)
-RETURN c, p, cap
-```
-
-**Which systems serve which contexts:**
-```cypher
-MATCH (s:System)-[:SERVES]->(c:BoundedContext)
-RETURN s, c
+MATCH (c:BoundedContext)-[:IMPLEMENTS]->(p:Pattern)-[:DELIVERS]->(cap:Capability) RETURN c, p, cap
 ```
 
 **Value stream flow (annual edition cycle):**
 ```cypher
-MATCH (a:Stage)-[:FLOWS_TO]->(b:Stage)
-RETURN a, b
+MATCH (a:Stage)-[:FLOWS_TO]->(b:Stage) RETURN a, b
 ```
 
-**Domain events and what metrics they produce:**
+**The rebooking story — most important business flow:**
 ```cypher
-MATCH (e:DomainEvent)-[:PRODUCES]->(m:Metric)
-RETURN e, m
+MATCH (e:DomainEvent {id: 'EventConcluded'})-[r1]->(m:Metric) RETURN e, r1, m
+UNION
+MATCH (rx:Prescription {id: 'rx-rebooking-advisor'})-[r2]->(cap:Capability) RETURN rx, r2, cap
 ```
 
-**Agent prescriptions — what they unlock:**
+**Everything connected to one context (change 'exhibitor' to explore others):**
 ```cypher
-MATCH (rx:Prescription)-[:UNLOCKS]->(cap:Capability)
-RETURN rx, cap
-```
-
-**Corpus sources — what informs each context:**
-```cypher
-MATCH (src:CorpusSource)-[:INFORMS]->(ctx:BoundedContext)
-RETURN src, ctx
-```
-
-**Goal patterns and what they measure:**
-```cypher
-MATCH (g:Goal)-[:MEASURES]->(p:Pattern)
-RETURN g, p
-```
-
-**Everything connected to the Exhibitor context:**
-```cypher
-MATCH (c:BoundedContext {id: 'exhibitor'})-[r]-(n)
-RETURN c, r, n
+MATCH (bc:BoundedContext {id: 'exhibitor'})-[r]-(n) RETURN bc, r, n
 ```
 
 ### Graph Reload
