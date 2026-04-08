@@ -14,14 +14,14 @@
 
 ## Domain Pattern Files
 
-Domain patterns live alongside this directory in `mirror/domain/patterns/`:
+Domain patterns live in `mirror/domain/patterns/domain/`:
 
 | Pattern | Context | Type |
 |---------|---------|------|
-| [exhibitor-lifecycle-management](../exhibitor-lifecycle-management.md) | Exhibitor | CORE |
-| [sponsorship-inventory-and-yield](../sponsorship-inventory-and-yield.md) | Sponsorship | CORE |
-| [exhibition-space-optimization](../exhibition-space-optimization.md) | Exhibition Space | CORE |
-| [event-edition-lifecycle](../event-edition-lifecycle.md) | Event | CORE |
-| [attendee-registration](../attendee-registration.md) | Attendee | SUPPORTING |
-| [lead-capture-and-delivery](../lead-capture-and-delivery.md) | Interaction | SUPPORTING |
-| [contract-and-financial-management](../contract-and-financial-management.md) | Agreement + Finance | GENERIC |
+| [exhibitor-lifecycle-management](../domain/exhibitor-lifecycle-management.md) | Exhibitor | CORE |
+| [sponsorship-inventory-and-yield](../domain/sponsorship-inventory-and-yield.md) | Sponsorship | CORE |
+| [exhibition-space-optimization](../domain/exhibition-space-optimization.md) | Exhibition Space | CORE |
+| [event-edition-lifecycle](../domain/event-edition-lifecycle.md) | Event | CORE |
+| [attendee-registration](../domain/attendee-registration.md) | Attendee | SUPPORTING |
+| [lead-capture-and-delivery](../domain/lead-capture-and-delivery.md) | Interaction | SUPPORTING |
+| [contract-and-financial-management](../domain/contract-and-financial-management.md) | Agreement + Finance | GENERIC |
